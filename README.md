@@ -1,4 +1,4 @@
-# STM32F743内部Flash
+# STM32H743内部Flash
 
 ## Flash架构
 
