@@ -1,0 +1,18 @@
+{
+  "workspace": {
+    "path": "${workspaceFolder}\\EWARM\\Project.eww"
+  },
+  "workspaces": {
+    "${workspaceFolder}\\EWARM\\Project.eww": {
+      "configs": {
+        "${workspaceFolder}\\EWARM\\STM32H743_Bootloader.ewp": "STM32H743_Bootloader"
+      },
+      "selected": {
+        "path": "${workspaceFolder}\\EWARM\\STM32H743_Bootloader.ewp"
+      }
+    }
+  },
+  "workbench": {
+    "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.1"
+  }
+}
