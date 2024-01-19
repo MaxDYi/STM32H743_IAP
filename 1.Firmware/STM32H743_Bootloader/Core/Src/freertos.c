@@ -182,11 +182,6 @@ void TaskIAP(void const *argument)
                 YmodemState = Ymodem_ReceiveFile(YmodemState);
                 if (YmodemState == YMODEM_STATE_RECEIVE_FINISH)
                 {
-
-                    // FLASH_OBProgramInitTypeDef OBInit;
-                    // HAL_FLASHEx_OBGetConfig(&OBInit);
-                    // OBInit.Banks = FLASH_BANK_1;
-                    // HAL_FLASHEx_OBGetConfig(&OBInit);
                     if (CheckAppCRC(APP_START_ADDRESS, APP_MAX_SIZE, APP_CRC_ADDRESS) == CRC_SUCCESS)
                     {
                         SwapBank(2);
