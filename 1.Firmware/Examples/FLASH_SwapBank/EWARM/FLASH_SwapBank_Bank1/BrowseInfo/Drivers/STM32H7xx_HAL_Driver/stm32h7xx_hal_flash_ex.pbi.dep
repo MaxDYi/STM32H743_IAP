@@ -1,0 +1,52 @@
+C:\Users\MaxDYi\STM32Cube\Repository\STM32Cube_FW_H7_V1.11.1\Projects\STM32H743I-EVAL\Examples\FLASH\FLASH_SwapBank\EWARM\FLASH_SwapBank_Bank1\BrowseInfo\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_flash_ex.pbi: \
+  C:\Users\MaxDYi\STM32Cube\Repository\STM32Cube_FW_H7_V1.11.1\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_flash_ex.c \
+  C:\Users\MaxDYi\STM32Cube\Repository\STM32Cube_FW_H7_V1.11.1\Projects\STM32H743I-EVAL\Examples\FLASH\FLASH_SwapBank\EWARM\..\..\..\..\..\..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal.h \
+  C:\Users\MaxDYi\STM32Cube\Repository\STM32Cube_FW_H7_V1.11.1\Projects\STM32H743I-EVAL\Examples\FLASH\FLASH_SwapBank\EWARM\..\Inc\stm32h7xx_hal_conf.h \
+  C:\Users\MaxDYi\STM32Cube\Repository\STM32Cube_FW_H7_V1.11.1\Projects\STM32H743I-EVAL\Examples\FLASH\FLASH_SwapBank\EWARM\..\..\..\..\..\..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_rcc.h \
+  C:\Users\MaxDYi\STM32Cube\Repository\STM32Cube_FW_H7_V1.11.1\Projects\STM32H743I-EVAL\Examples\FLASH\FLASH_SwapBank\EWARM\..\..\..\..\..\..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_def.h \
+  C:\Users\MaxDYi\STM32Cube\Repository\STM32Cube_FW_H7_V1.11.1\Projects\STM32H743I-EVAL\Examples\FLASH\FLASH_SwapBank\EWARM\..\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h7xx.h \
+  C:\Users\MaxDYi\STM32Cube\Repository\STM32Cube_FW_H7_V1.11.1\Projects\STM32H743I-EVAL\Examples\FLASH\FLASH_SwapBank\EWARM\..\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h743xx.h \
+  C:\Users\MaxDYi\STM32Cube\Repository\STM32Cube_FW_H7_V1.11.1\Projects\STM32H743I-EVAL\Examples\FLASH\FLASH_SwapBank\EWARM\..\..\..\..\..\..\Drivers\CMSIS\Include\core_cm7.h \
+  C:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.1\arm\inc\c\stdint.h \
+  C:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.1\arm\inc\c\ycheck.h \
+  C:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.1\arm\inc\c\yvals.h \
+  C:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.1\arm\inc\c\DLib_Defaults.h \
+  C:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.1\arm\inc\c\DLib_Config_Full.h \
+  C:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.1\arm\inc\c\DLib_Product.h \
+  C:\Users\MaxDYi\STM32Cube\Repository\STM32Cube_FW_H7_V1.11.1\Projects\STM32H743I-EVAL\Examples\FLASH\FLASH_SwapBank\EWARM\..\..\..\..\..\..\Drivers\CMSIS\Include\cmsis_version.h \
+  C:\Users\MaxDYi\STM32Cube\Repository\STM32Cube_FW_H7_V1.11.1\Projects\STM32H743I-EVAL\Examples\FLASH\FLASH_SwapBank\EWARM\..\..\..\..\..\..\Drivers\CMSIS\Include\cmsis_compiler.h \
+  C:\Users\MaxDYi\STM32Cube\Repository\STM32Cube_FW_H7_V1.11.1\Projects\STM32H743I-EVAL\Examples\FLASH\FLASH_SwapBank\EWARM\..\..\..\..\..\..\Drivers\CMSIS\Include\cmsis_iccarm.h \
+  C:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.1\arm\inc\c\aarch32\iccarm_builtin.h \
+  C:\Users\MaxDYi\STM32Cube\Repository\STM32Cube_FW_H7_V1.11.1\Projects\STM32H743I-EVAL\Examples\FLASH\FLASH_SwapBank\EWARM\..\..\..\..\..\..\Drivers\CMSIS\Include\mpu_armv7.h \
+  C:\Users\MaxDYi\STM32Cube\Repository\STM32Cube_FW_H7_V1.11.1\Projects\STM32H743I-EVAL\Examples\FLASH\FLASH_SwapBank\EWARM\..\..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32H7xx\Include\system_stm32h7xx.h \
+  C:\Users\MaxDYi\STM32Cube\Repository\STM32Cube_FW_H7_V1.11.1\Projects\STM32H743I-EVAL\Examples\FLASH\FLASH_SwapBank\EWARM\..\..\..\..\..\..\Drivers\STM32H7xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h \
+  C:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.1\arm\inc\c\stddef.h \
+  C:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.1\arm\inc\c\ysizet.h \
+  C:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.1\arm\inc\c\math.h \
+  C:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.1\arm\inc\c\DLib_float_setup.h \
+  C:\Users\MaxDYi\STM32Cube\Repository\STM32Cube_FW_H7_V1.11.1\Projects\STM32H743I-EVAL\Examples\FLASH\FLASH_SwapBank\EWARM\..\..\..\..\..\..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_rcc_ex.h \
+  C:\Users\MaxDYi\STM32Cube\Repository\STM32Cube_FW_H7_V1.11.1\Projects\STM32H743I-EVAL\Examples\FLASH\FLASH_SwapBank\EWARM\..\..\..\..\..\..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_gpio.h \
+  C:\Users\MaxDYi\STM32Cube\Repository\STM32Cube_FW_H7_V1.11.1\Projects\STM32H743I-EVAL\Examples\FLASH\FLASH_SwapBank\EWARM\..\..\..\..\..\..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_gpio_ex.h \
+  C:\Users\MaxDYi\STM32Cube\Repository\STM32Cube_FW_H7_V1.11.1\Projects\STM32H743I-EVAL\Examples\FLASH\FLASH_SwapBank\EWARM\..\..\..\..\..\..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_dma.h \
+  C:\Users\MaxDYi\STM32Cube\Repository\STM32Cube_FW_H7_V1.11.1\Projects\STM32H743I-EVAL\Examples\FLASH\FLASH_SwapBank\EWARM\..\..\..\..\..\..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_dma_ex.h \
+  C:\Users\MaxDYi\STM32Cube\Repository\STM32Cube_FW_H7_V1.11.1\Projects\STM32H743I-EVAL\Examples\FLASH\FLASH_SwapBank\EWARM\..\..\..\..\..\..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_mdma.h \
+  C:\Users\MaxDYi\STM32Cube\Repository\STM32Cube_FW_H7_V1.11.1\Projects\STM32H743I-EVAL\Examples\FLASH\FLASH_SwapBank\EWARM\..\..\..\..\..\..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_dma2d.h \
+  C:\Users\MaxDYi\STM32Cube\Repository\STM32Cube_FW_H7_V1.11.1\Projects\STM32H743I-EVAL\Examples\FLASH\FLASH_SwapBank\EWARM\..\..\..\..\..\..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_exti.h \
+  C:\Users\MaxDYi\STM32Cube\Repository\STM32Cube_FW_H7_V1.11.1\Projects\STM32H743I-EVAL\Examples\FLASH\FLASH_SwapBank\EWARM\..\..\..\..\..\..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_cortex.h \
+  C:\Users\MaxDYi\STM32Cube\Repository\STM32Cube_FW_H7_V1.11.1\Projects\STM32H743I-EVAL\Examples\FLASH\FLASH_SwapBank\EWARM\..\..\..\..\..\..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_adc.h \
+  C:\Users\MaxDYi\STM32Cube\Repository\STM32Cube_FW_H7_V1.11.1\Projects\STM32H743I-EVAL\Examples\FLASH\FLASH_SwapBank\EWARM\..\..\..\..\..\..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_adc.h \
+  C:\Users\MaxDYi\STM32Cube\Repository\STM32Cube_FW_H7_V1.11.1\Projects\STM32H743I-EVAL\Examples\FLASH\FLASH_SwapBank\EWARM\..\..\..\..\..\..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_adc_ex.h \
+  C:\Users\MaxDYi\STM32Cube\Repository\STM32Cube_FW_H7_V1.11.1\Projects\STM32H743I-EVAL\Examples\FLASH\FLASH_SwapBank\EWARM\..\..\..\..\..\..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_flash.h \
+  C:\Users\MaxDYi\STM32Cube\Repository\STM32Cube_FW_H7_V1.11.1\Projects\STM32H743I-EVAL\Examples\FLASH\FLASH_SwapBank\EWARM\..\..\..\..\..\..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_flash_ex.h \
+  C:\Users\MaxDYi\STM32Cube\Repository\STM32Cube_FW_H7_V1.11.1\Projects\STM32H743I-EVAL\Examples\FLASH\FLASH_SwapBank\EWARM\..\..\..\..\..\..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_i2c.h \
+  C:\Users\MaxDYi\STM32Cube\Repository\STM32Cube_FW_H7_V1.11.1\Projects\STM32H743I-EVAL\Examples\FLASH\FLASH_SwapBank\EWARM\..\..\..\..\..\..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_i2c_ex.h \
+  C:\Users\MaxDYi\STM32Cube\Repository\STM32Cube_FW_H7_V1.11.1\Projects\STM32H743I-EVAL\Examples\FLASH\FLASH_SwapBank\EWARM\..\..\..\..\..\..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_ltdc.h \
+  C:\Users\MaxDYi\STM32Cube\Repository\STM32Cube_FW_H7_V1.11.1\Projects\STM32H743I-EVAL\Examples\FLASH\FLASH_SwapBank\EWARM\..\..\..\..\..\..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_ltdc_ex.h \
+  C:\Users\MaxDYi\STM32Cube\Repository\STM32Cube_FW_H7_V1.11.1\Projects\STM32H743I-EVAL\Examples\FLASH\FLASH_SwapBank\EWARM\..\..\..\..\..\..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_pwr.h \
+  C:\Users\MaxDYi\STM32Cube\Repository\STM32Cube_FW_H7_V1.11.1\Projects\STM32H743I-EVAL\Examples\FLASH\FLASH_SwapBank\EWARM\..\..\..\..\..\..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_pwr_ex.h \
+  C:\Users\MaxDYi\STM32Cube\Repository\STM32Cube_FW_H7_V1.11.1\Projects\STM32H743I-EVAL\Examples\FLASH\FLASH_SwapBank\EWARM\..\..\..\..\..\..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_sdram.h \
+  C:\Users\MaxDYi\STM32Cube\Repository\STM32Cube_FW_H7_V1.11.1\Projects\STM32H743I-EVAL\Examples\FLASH\FLASH_SwapBank\EWARM\..\..\..\..\..\..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_fmc.h \
+  C:\Users\MaxDYi\STM32Cube\Repository\STM32Cube_FW_H7_V1.11.1\Projects\STM32H743I-EVAL\Examples\FLASH\FLASH_SwapBank\EWARM\..\..\..\..\..\..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_uart.h \
+  C:\Users\MaxDYi\STM32Cube\Repository\STM32Cube_FW_H7_V1.11.1\Projects\STM32H743I-EVAL\Examples\FLASH\FLASH_SwapBank\EWARM\..\..\..\..\..\..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_uart_ex.h \
+  C:\Users\MaxDYi\STM32Cube\Repository\STM32Cube_FW_H7_V1.11.1\Projects\STM32H743I-EVAL\Examples\FLASH\FLASH_SwapBank\EWARM\..\..\..\..\..\..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_usart.h \
+  C:\Users\MaxDYi\STM32Cube\Repository\STM32Cube_FW_H7_V1.11.1\Projects\STM32H743I-EVAL\Examples\FLASH\FLASH_SwapBank\EWARM\..\..\..\..\..\..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_usart_ex.h

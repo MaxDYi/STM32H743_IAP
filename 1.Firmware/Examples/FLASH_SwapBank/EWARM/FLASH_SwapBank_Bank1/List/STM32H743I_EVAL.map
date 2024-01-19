@@ -1,0 +1,816 @@
+###############################################################################
+#
+# IAR ELF Linker V9.30.1.335/W64 for ARM                  16/Jan/2024  12:48:34
+# Copyright 2007-2022 IAR Systems AB.
+#
+#    Output file  =
+#        C:\Users\MaxDYi\STM32Cube\Repository\STM32Cube_FW_H7_V1.11.1\Projects\STM32H743I-EVAL\Examples\FLASH\FLASH_SwapBank\EWARM\FLASH_SwapBank_Bank1\Exe\STM32H743I_EVAL.out
+#    Map file     =
+#        C:\Users\MaxDYi\STM32Cube\Repository\STM32Cube_FW_H7_V1.11.1\Projects\STM32H743I-EVAL\Examples\FLASH\FLASH_SwapBank\EWARM\FLASH_SwapBank_Bank1\List\STM32H743I_EVAL.map
+#    Command line =
+#        -f
+#        C:\Users\MaxDYi\STM32Cube\Repository\STM32Cube_FW_H7_V1.11.1\Projects\STM32H743I-EVAL\Examples\FLASH\FLASH_SwapBank\EWARM\FLASH_SwapBank_Bank1\Exe\STM32H743I_EVAL.out.rsp
+#        (C:\Users\MaxDYi\STM32Cube\Repository\STM32Cube_FW_H7_V1.11.1\Projects\STM32H743I-EVAL\Examples\FLASH\FLASH_SwapBank\EWARM\FLASH_SwapBank_Bank1\Obj\Example\User\main.o
+#        C:\Users\MaxDYi\STM32Cube\Repository\STM32Cube_FW_H7_V1.11.1\Projects\STM32H743I-EVAL\Examples\FLASH\FLASH_SwapBank\EWARM\FLASH_SwapBank_Bank1\Obj\Drivers\BSP\Components\mfxstm32l152.o
+#        C:\Users\MaxDYi\STM32Cube\Repository\STM32Cube_FW_H7_V1.11.1\Projects\STM32H743I-EVAL\Examples\FLASH\FLASH_SwapBank\EWARM\FLASH_SwapBank_Bank1\Obj\Drivers\BSP\Components\mfxstm32l152_reg.o
+#        C:\Users\MaxDYi\STM32Cube\Repository\STM32Cube_FW_H7_V1.11.1\Projects\STM32H743I-EVAL\Examples\FLASH\FLASH_SwapBank\EWARM\FLASH_SwapBank_Bank1\Obj\Example\EWARM\startup_stm32h743xx.o
+#        C:\Users\MaxDYi\STM32Cube\Repository\STM32Cube_FW_H7_V1.11.1\Projects\STM32H743I-EVAL\Examples\FLASH\FLASH_SwapBank\EWARM\FLASH_SwapBank_Bank1\Obj\Drivers\BSP\STM32H743I-EVAL\stm32h743i_eval.o
+#        C:\Users\MaxDYi\STM32Cube\Repository\STM32Cube_FW_H7_V1.11.1\Projects\STM32H743I-EVAL\Examples\FLASH\FLASH_SwapBank\EWARM\FLASH_SwapBank_Bank1\Obj\Drivers\BSP\STM32H743I-EVAL\stm32h743i_eval_bus.o
+#        C:\Users\MaxDYi\STM32Cube\Repository\STM32Cube_FW_H7_V1.11.1\Projects\STM32H743I-EVAL\Examples\FLASH\FLASH_SwapBank\EWARM\FLASH_SwapBank_Bank1\Obj\Drivers\BSP\STM32H743I-EVAL\stm32h743i_eval_io.o
+#        C:\Users\MaxDYi\STM32Cube\Repository\STM32Cube_FW_H7_V1.11.1\Projects\STM32H743I-EVAL\Examples\FLASH\FLASH_SwapBank\EWARM\FLASH_SwapBank_Bank1\Obj\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal.o
+#        C:\Users\MaxDYi\STM32Cube\Repository\STM32Cube_FW_H7_V1.11.1\Projects\STM32H743I-EVAL\Examples\FLASH\FLASH_SwapBank\EWARM\FLASH_SwapBank_Bank1\Obj\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_adc.o
+#        C:\Users\MaxDYi\STM32Cube\Repository\STM32Cube_FW_H7_V1.11.1\Projects\STM32H743I-EVAL\Examples\FLASH\FLASH_SwapBank\EWARM\FLASH_SwapBank_Bank1\Obj\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_adc_ex.o
+#        C:\Users\MaxDYi\STM32Cube\Repository\STM32Cube_FW_H7_V1.11.1\Projects\STM32H743I-EVAL\Examples\FLASH\FLASH_SwapBank\EWARM\FLASH_SwapBank_Bank1\Obj\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_cortex.o
+#        C:\Users\MaxDYi\STM32Cube\Repository\STM32Cube_FW_H7_V1.11.1\Projects\STM32H743I-EVAL\Examples\FLASH\FLASH_SwapBank\EWARM\FLASH_SwapBank_Bank1\Obj\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_dma.o
+#        C:\Users\MaxDYi\STM32Cube\Repository\STM32Cube_FW_H7_V1.11.1\Projects\STM32H743I-EVAL\Examples\FLASH\FLASH_SwapBank\EWARM\FLASH_SwapBank_Bank1\Obj\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_dma_ex.o
+#        C:\Users\MaxDYi\STM32Cube\Repository\STM32Cube_FW_H7_V1.11.1\Projects\STM32H743I-EVAL\Examples\FLASH\FLASH_SwapBank\EWARM\FLASH_SwapBank_Bank1\Obj\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_exti.o
+#        C:\Users\MaxDYi\STM32Cube\Repository\STM32Cube_FW_H7_V1.11.1\Projects\STM32H743I-EVAL\Examples\FLASH\FLASH_SwapBank\EWARM\FLASH_SwapBank_Bank1\Obj\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_flash.o
+#        C:\Users\MaxDYi\STM32Cube\Repository\STM32Cube_FW_H7_V1.11.1\Projects\STM32H743I-EVAL\Examples\FLASH\FLASH_SwapBank\EWARM\FLASH_SwapBank_Bank1\Obj\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_flash_ex.o
+#        C:\Users\MaxDYi\STM32Cube\Repository\STM32Cube_FW_H7_V1.11.1\Projects\STM32H743I-EVAL\Examples\FLASH\FLASH_SwapBank\EWARM\FLASH_SwapBank_Bank1\Obj\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_gpio.o
+#        C:\Users\MaxDYi\STM32Cube\Repository\STM32Cube_FW_H7_V1.11.1\Projects\STM32H743I-EVAL\Examples\FLASH\FLASH_SwapBank\EWARM\FLASH_SwapBank_Bank1\Obj\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_i2c.o
+#        C:\Users\MaxDYi\STM32Cube\Repository\STM32Cube_FW_H7_V1.11.1\Projects\STM32H743I-EVAL\Examples\FLASH\FLASH_SwapBank\EWARM\FLASH_SwapBank_Bank1\Obj\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_i2c_ex.o
+#        C:\Users\MaxDYi\STM32Cube\Repository\STM32Cube_FW_H7_V1.11.1\Projects\STM32H743I-EVAL\Examples\FLASH\FLASH_SwapBank\EWARM\FLASH_SwapBank_Bank1\Obj\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_pwr.o
+#        C:\Users\MaxDYi\STM32Cube\Repository\STM32Cube_FW_H7_V1.11.1\Projects\STM32H743I-EVAL\Examples\FLASH\FLASH_SwapBank\EWARM\FLASH_SwapBank_Bank1\Obj\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_pwr_ex.o
+#        C:\Users\MaxDYi\STM32Cube\Repository\STM32Cube_FW_H7_V1.11.1\Projects\STM32H743I-EVAL\Examples\FLASH\FLASH_SwapBank\EWARM\FLASH_SwapBank_Bank1\Obj\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_rcc.o
+#        C:\Users\MaxDYi\STM32Cube\Repository\STM32Cube_FW_H7_V1.11.1\Projects\STM32H743I-EVAL\Examples\FLASH\FLASH_SwapBank\EWARM\FLASH_SwapBank_Bank1\Obj\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_rcc_ex.o
+#        C:\Users\MaxDYi\STM32Cube\Repository\STM32Cube_FW_H7_V1.11.1\Projects\STM32H743I-EVAL\Examples\FLASH\FLASH_SwapBank\EWARM\FLASH_SwapBank_Bank1\Obj\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_uart.o
+#        C:\Users\MaxDYi\STM32Cube\Repository\STM32Cube_FW_H7_V1.11.1\Projects\STM32H743I-EVAL\Examples\FLASH\FLASH_SwapBank\EWARM\FLASH_SwapBank_Bank1\Obj\Drivers\STM32H7xx_HAL_Driver\stm32h7xx_hal_uart_ex.o
+#        C:\Users\MaxDYi\STM32Cube\Repository\STM32Cube_FW_H7_V1.11.1\Projects\STM32H743I-EVAL\Examples\FLASH\FLASH_SwapBank\EWARM\FLASH_SwapBank_Bank1\Obj\Example\User\stm32h7xx_it.o
+#        C:\Users\MaxDYi\STM32Cube\Repository\STM32Cube_FW_H7_V1.11.1\Projects\STM32H743I-EVAL\Examples\FLASH\FLASH_SwapBank\EWARM\FLASH_SwapBank_Bank1\Obj\Drivers\BSP\Components\stmpe811.o
+#        C:\Users\MaxDYi\STM32Cube\Repository\STM32Cube_FW_H7_V1.11.1\Projects\STM32H743I-EVAL\Examples\FLASH\FLASH_SwapBank\EWARM\FLASH_SwapBank_Bank1\Obj\Drivers\CMSIS\system_stm32h7xx.o
+#        --redirect _Printf=_PrintfFull --redirect _Scanf=_ScanfFull
+#        --no_out_extension -o
+#        C:\Users\MaxDYi\STM32Cube\Repository\STM32Cube_FW_H7_V1.11.1\Projects\STM32H743I-EVAL\Examples\FLASH\FLASH_SwapBank\EWARM\FLASH_SwapBank_Bank1\Exe\STM32H743I_EVAL.out
+#        --map
+#        C:\Users\MaxDYi\STM32Cube\Repository\STM32Cube_FW_H7_V1.11.1\Projects\STM32H743I-EVAL\Examples\FLASH\FLASH_SwapBank\EWARM\FLASH_SwapBank_Bank1\List\STM32H743I_EVAL.map
+#        --config
+#        C:\Users\MaxDYi\STM32Cube\Repository\STM32Cube_FW_H7_V1.11.1\Projects\STM32H743I-EVAL\Examples\FLASH\FLASH_SwapBank\EWARM\stm32h743xx_flash.icf
+#        --semihosting --entry __iar_program_start --vfe --text_out locale
+#        --cpu=Cortex-M7 --fpu=VFPv5_d16)
+#
+###############################################################################
+
+*******************************************************************************
+*** RUNTIME MODEL ATTRIBUTES
+***
+
+CppFlavor       = *
+__CPP_Runtime   = 1
+__SystemLibrary = DLib
+__dlib_version  = 6
+
+
+*******************************************************************************
+*** HEAP SELECTION
+***
+
+The basic heap was selected because --advanced_heap
+was not specified and the application did not appear to
+be primarily optimized for speed.
+
+
+*******************************************************************************
+*** PLACEMENT SUMMARY
+***
+
+"A0":  place at address 0x800'0000 { ro section .intvec };
+"P1":  place in [from 0x800'0000 to 0x80f'ffff] { ro };
+define block CSTACK with size = 1K, alignment = 8 { };
+define block HEAP with size = 512, alignment = 8 { };
+"P2":  place in [from 0x2000'0000 to 0x2001'ffff] {
+          rw, block CSTACK, block HEAP };
+initialize by copy { rw };
+
+  Section            Kind         Address    Size  Object
+  -------            ----         -------    ----  ------
+"A0":                                       0x298
+  .intvec            ro code   0x800'0000   0x298  startup_stm32h743xx.o [5]
+                             - 0x800'0298   0x298
+
+"P1":                                      0x2fa7
+  .text              ro code   0x800'0298   0x618  stm32h7xx_hal_i2c.o [4]
+  .text              ro code   0x800'08b0     0x2  stm32h7xx_hal_i2c.o [4]
+  .text              ro code   0x800'08b2     0x2  stm32h7xx_hal_i2c.o [4]
+  .text              ro code   0x800'08b4     0xc  stm32h7xx_hal.o [4]
+  .text              ro code   0x800'08c0   0x55c  mfxstm32l152.o [1]
+  .text              ro code   0x800'0e1c    0x18  mfxstm32l152_reg.o [1]
+  .text              ro code   0x800'0e34   0x510  stm32h7xx_hal_rcc.o [4]
+  .text              ro code   0x800'1344    0x68  stm32h7xx_hal.o [4]
+  .text              ro code   0x800'13ac   0x148  stm32h7xx_hal_cortex.o [4]
+  .text              ro code   0x800'14f4   0x394  stm32h7xx_hal_rcc.o [4]
+  .text              ro code   0x800'1888    0x44  stm32h7xx_hal.o [4]
+  .text              ro code   0x800'18cc     0x2  stm32h7xx_hal.o [4]
+  .text              ro code   0x800'18ce    0x3a  packbits_init_single.o [9]
+  .text              ro code   0x800'1908   0x3d0  stm32h743i_eval_bus.o [2]
+  .text              ro code   0x800'1cd8   0x398  stm32h7xx_hal_gpio.o [4]
+  .text              ro code   0x800'2070    0x38  stm32h743i_eval_bus.o [2]
+  .text              ro code   0x800'20a8     0x2  stm32h7xx_hal_gpio.o [4]
+  .text              ro code   0x800'20ac    0x7e  stm32h7xx_hal_i2c_ex.o [4]
+  .text              ro code   0x800'212c   0x308  stm32h7xx_hal_flash_ex.o [4]
+  .text              ro code   0x800'2434   0x244  stm32h7xx_hal_flash.o [4]
+  .text              ro code   0x800'2678   0x226  stm32h743i_eval_io.o [2]
+  .text              ro code   0x800'28a0    0x1c  stm32h7xx_hal_exti.o [4]
+  .text              ro code   0x800'28bc     0x2  stm32h743i_eval_io.o [2]
+  .text              ro code   0x800'28c0   0x214  stm32h743i_eval.o [2]
+  .text              ro code   0x800'2ad4     0x2  stm32h743i_eval.o [2]
+  .text              ro code   0x800'2ad8   0x200  main.o [6]
+  .text              ro code   0x800'2cd8    0x48  stm32h7xx_hal_pwr_ex.o [4]
+  .text              ro code   0x800'2d20    0x28  stm32h7xx_hal.o [4]
+  .text              ro code   0x800'2d48    0x9c  system_stm32h7xx.o [3]
+  .rodata            const     0x800'2de4    0x84  stm32h743i_eval_bus.o [2]
+  .text              ro code   0x800'2e68    0x38  zero_init3.o [9]
+  .text              ro code   0x800'2ea0    0x28  data_init.o [9]
+  .text              ro code   0x800'2ec8    0x22  fpinit_M.o [8]
+  .iar.init_table    const     0x800'2eec    0x20  - Linker created -
+  .text              ro code   0x800'2f0c    0x1e  cmain.o [9]
+  .text              ro code   0x800'2f2a     0x4  low_level_init.o [7]
+  .text              ro code   0x800'2f2e     0x4  exit.o [7]
+  .text              ro code   0x800'2f34     0xa  cexit.o [9]
+  .text              ro code   0x800'2f40    0x14  exit.o [10]
+  .text              ro code   0x800'2f54    0x1c  stm32h7xx_it.o [6]
+  .text              ro code   0x800'2f70    0x10  stm32h7xx_hal.o [4]
+  .text              ro code   0x800'2f80    0x1c  cstartup_M.o [9]
+  .text              ro code   0x800'2f9c    0x10  startup_stm32h743xx.o [5]
+  .text              ro code   0x800'2fac     0x4  startup_stm32h743xx.o [5]
+  .text              ro code   0x800'2fb0     0x4  startup_stm32h743xx.o [5]
+  .text              ro code   0x800'2fb4     0x4  startup_stm32h743xx.o [5]
+  .text              ro code   0x800'2fb8     0x4  startup_stm32h743xx.o [5]
+  .text              ro code   0x800'2fbc     0x4  startup_stm32h743xx.o [5]
+  .text              ro code   0x800'2fc0     0x4  startup_stm32h743xx.o [5]
+  .text              ro code   0x800'2fc4     0x4  startup_stm32h743xx.o [5]
+  .text              ro code   0x800'2fc8     0x4  startup_stm32h743xx.o [5]
+  .text              ro code   0x800'2fcc     0x4  startup_stm32h743xx.o [5]
+  .text              ro code   0x800'2fd0     0x4  startup_stm32h743xx.o [5]
+  .text              ro code   0x800'2fd4     0x4  startup_stm32h743xx.o [5]
+  .text              ro code   0x800'2fd8     0x4  startup_stm32h743xx.o [5]
+  .text              ro code   0x800'2fdc     0x4  startup_stm32h743xx.o [5]
+  .text              ro code   0x800'2fe0     0x4  startup_stm32h743xx.o [5]
+  .text              ro code   0x800'2fe4     0x4  startup_stm32h743xx.o [5]
+  .text              ro code   0x800'2fe8     0x4  startup_stm32h743xx.o [5]
+  .text              ro code   0x800'2fec     0x4  startup_stm32h743xx.o [5]
+  .text              ro code   0x800'2ff0     0x4  startup_stm32h743xx.o [5]
+  .text              ro code   0x800'2ff4     0x4  startup_stm32h743xx.o [5]
+  .text              ro code   0x800'2ff8     0x4  startup_stm32h743xx.o [5]
+  .text              ro code   0x800'2ffc     0x4  startup_stm32h743xx.o [5]
+  .text              ro code   0x800'3000     0x4  startup_stm32h743xx.o [5]
+  .text              ro code   0x800'3004     0x4  startup_stm32h743xx.o [5]
+  .text              ro code   0x800'3008     0x4  startup_stm32h743xx.o [5]
+  .text              ro code   0x800'300c     0x4  startup_stm32h743xx.o [5]
+  .text              ro code   0x800'3010     0x4  startup_stm32h743xx.o [5]
+  .text              ro code   0x800'3014     0x4  startup_stm32h743xx.o [5]
+  .text              ro code   0x800'3018     0x4  startup_stm32h743xx.o [5]
+  .text              ro code   0x800'301c     0x4  startup_stm32h743xx.o [5]
+  .text              ro code   0x800'3020     0x4  startup_stm32h743xx.o [5]
+  .text              ro code   0x800'3024     0x4  startup_stm32h743xx.o [5]
+  .text              ro code   0x800'3028     0x4  startup_stm32h743xx.o [5]
+  .text              ro code   0x800'302c     0x4  startup_stm32h743xx.o [5]
+  .text              ro code   0x800'3030     0x4  startup_stm32h743xx.o [5]
+  .text              ro code   0x800'3034     0x4  startup_stm32h743xx.o [5]
+  .text              ro code   0x800'3038     0x4  startup_stm32h743xx.o [5]
+  .text              ro code   0x800'303c     0x4  startup_stm32h743xx.o [5]
+  .text              ro code   0x800'3040     0x4  startup_stm32h743xx.o [5]
+  .text              ro code   0x800'3044     0x4  startup_stm32h743xx.o [5]
+  .text              ro code   0x800'3048     0x4  startup_stm32h743xx.o [5]
+  .text              ro code   0x800'304c     0x4  startup_stm32h743xx.o [5]
+  .text              ro code   0x800'3050     0x4  startup_stm32h743xx.o [5]
+  .text              ro code   0x800'3054     0x4  startup_stm32h743xx.o [5]
+  .text              ro code   0x800'3058     0x4  startup_stm32h743xx.o [5]
+  .text              ro code   0x800'305c     0x4  startup_stm32h743xx.o [5]
+  .text              ro code   0x800'3060     0x4  startup_stm32h743xx.o [5]
+  .text              ro code   0x800'3064     0x4  startup_stm32h743xx.o [5]
+  .text              ro code   0x800'3068     0x4  startup_stm32h743xx.o [5]
+  .text              ro code   0x800'306c     0x4  startup_stm32h743xx.o [5]
+  .text              ro code   0x800'3070     0x4  startup_stm32h743xx.o [5]
+  .text              ro code   0x800'3074     0x4  startup_stm32h743xx.o [5]
+  .text              ro code   0x800'3078     0x4  startup_stm32h743xx.o [5]
+  .text              ro code   0x800'307c     0x4  startup_stm32h743xx.o [5]
+  .text              ro code   0x800'3080     0x4  startup_stm32h743xx.o [5]
+  .text              ro code   0x800'3084     0x4  startup_stm32h743xx.o [5]
+  .text              ro code   0x800'3088     0x4  startup_stm32h743xx.o [5]
+  .text              ro code   0x800'308c     0x4  startup_stm32h743xx.o [5]
+  .text              ro code   0x800'3090     0x4  startup_stm32h743xx.o [5]
+  .text              ro code   0x800'3094     0x4  startup_stm32h743xx.o [5]
+  .text              ro code   0x800'3098     0x4  startup_stm32h743xx.o [5]
+  .text              ro code   0x800'309c     0x4  startup_stm32h743xx.o [5]
+  .text              ro code   0x800'30a0     0x4  startup_stm32h743xx.o [5]
+  .text              ro code   0x800'30a4     0x4  startup_stm32h743xx.o [5]
+  .text              ro code   0x800'30a8     0x4  startup_stm32h743xx.o [5]
+  .text              ro code   0x800'30ac     0x4  startup_stm32h743xx.o [5]
+  .text              ro code   0x800'30b0     0x4  startup_stm32h743xx.o [5]
+  .text              ro code   0x800'30b4     0x4  startup_stm32h743xx.o [5]
+  .text              ro code   0x800'30b8     0x4  startup_stm32h743xx.o [5]
+  .text              ro code   0x800'30bc     0x4  startup_stm32h743xx.o [5]
+  .text              ro code   0x800'30c0     0x4  startup_stm32h743xx.o [5]
+  .text              ro code   0x800'30c4     0x4  startup_stm32h743xx.o [5]
+  .text              ro code   0x800'30c8     0x4  startup_stm32h743xx.o [5]
+  .text              ro code   0x800'30cc     0x4  startup_stm32h743xx.o [5]
+  .text              ro code   0x800'30d0     0x4  startup_stm32h743xx.o [5]
+  .text              ro code   0x800'30d4     0x4  startup_stm32h743xx.o [5]
+  .text              ro code   0x800'30d8     0x4  startup_stm32h743xx.o [5]
+  .text              ro code   0x800'30dc     0x4  startup_stm32h743xx.o [5]
+  .text              ro code   0x800'30e0     0x4  startup_stm32h743xx.o [5]
+  .text              ro code   0x800'30e4     0x4  startup_stm32h743xx.o [5]
+  .text              ro code   0x800'30e8     0x4  startup_stm32h743xx.o [5]
+  .text              ro code   0x800'30ec     0x4  startup_stm32h743xx.o [5]
+  .text              ro code   0x800'30f0     0x4  startup_stm32h743xx.o [5]
+  .text              ro code   0x800'30f4     0x4  startup_stm32h743xx.o [5]
+  .text              ro code   0x800'30f8     0x4  startup_stm32h743xx.o [5]
+  .text              ro code   0x800'30fc     0x4  startup_stm32h743xx.o [5]
+  .text              ro code   0x800'3100     0x4  startup_stm32h743xx.o [5]
+  .text              ro code   0x800'3104     0x4  startup_stm32h743xx.o [5]
+  .text              ro code   0x800'3108     0x4  startup_stm32h743xx.o [5]
+  .text              ro code   0x800'310c     0x4  startup_stm32h743xx.o [5]
+  .text              ro code   0x800'3110     0x4  startup_stm32h743xx.o [5]
+  .text              ro code   0x800'3114     0x4  startup_stm32h743xx.o [5]
+  .text              ro code   0x800'3118     0x4  startup_stm32h743xx.o [5]
+  .text              ro code   0x800'311c     0x4  startup_stm32h743xx.o [5]
+  .text              ro code   0x800'3120     0x4  startup_stm32h743xx.o [5]
+  .text              ro code   0x800'3124     0x4  startup_stm32h743xx.o [5]
+  .text              ro code   0x800'3128     0x4  startup_stm32h743xx.o [5]
+  .text              ro code   0x800'312c     0x4  startup_stm32h743xx.o [5]
+  .text              ro code   0x800'3130     0x4  startup_stm32h743xx.o [5]
+  .text              ro code   0x800'3134     0x4  startup_stm32h743xx.o [5]
+  .text              ro code   0x800'3138     0x4  startup_stm32h743xx.o [5]
+  .text              ro code   0x800'313c     0x4  startup_stm32h743xx.o [5]
+  .text              ro code   0x800'3140     0x4  startup_stm32h743xx.o [5]
+  .text              ro code   0x800'3144     0x4  startup_stm32h743xx.o [5]
+  .text              ro code   0x800'3148     0x4  startup_stm32h743xx.o [5]
+  .text              ro code   0x800'314c     0x4  startup_stm32h743xx.o [5]
+  .text              ro code   0x800'3150     0x4  startup_stm32h743xx.o [5]
+  .text              ro code   0x800'3154     0x4  startup_stm32h743xx.o [5]
+  .text              ro code   0x800'3158     0x4  startup_stm32h743xx.o [5]
+  .text              ro code   0x800'315c     0x4  startup_stm32h743xx.o [5]
+  .text              ro code   0x800'3160     0x4  startup_stm32h743xx.o [5]
+  .text              ro code   0x800'3164     0x4  startup_stm32h743xx.o [5]
+  .text              ro code   0x800'3168     0x4  startup_stm32h743xx.o [5]
+  .text              ro code   0x800'316c     0x4  startup_stm32h743xx.o [5]
+  .text              ro code   0x800'3170     0x4  startup_stm32h743xx.o [5]
+  .text              ro code   0x800'3174     0x4  startup_stm32h743xx.o [5]
+  .text              ro code   0x800'3178     0x4  startup_stm32h743xx.o [5]
+  .text              ro code   0x800'317c     0x4  startup_stm32h743xx.o [5]
+  .text              ro code   0x800'3180     0x4  startup_stm32h743xx.o [5]
+  .text              ro code   0x800'3184     0x4  startup_stm32h743xx.o [5]
+  .text              ro code   0x800'3188     0x4  startup_stm32h743xx.o [5]
+  .text              ro code   0x800'318c     0x4  startup_stm32h743xx.o [5]
+  .text              ro code   0x800'3190     0x4  startup_stm32h743xx.o [5]
+  .text              ro code   0x800'3194     0x4  startup_stm32h743xx.o [5]
+  .text              ro code   0x800'3198     0x4  startup_stm32h743xx.o [5]
+  .text              ro code   0x800'319c     0x4  startup_stm32h743xx.o [5]
+  .text              ro code   0x800'31a0     0x4  startup_stm32h743xx.o [5]
+  .text              ro code   0x800'31a4     0x4  startup_stm32h743xx.o [5]
+  .text              ro code   0x800'31a8     0x4  startup_stm32h743xx.o [5]
+  .text              ro code   0x800'31ac     0x4  startup_stm32h743xx.o [5]
+  .text              ro code   0x800'31b0     0x4  startup_stm32h743xx.o [5]
+  .text              ro code   0x800'31b4     0x4  startup_stm32h743xx.o [5]
+  .text              ro code   0x800'31b8     0x4  startup_stm32h743xx.o [5]
+  .text              ro code   0x800'31bc     0x4  startup_stm32h743xx.o [5]
+  .text              ro code   0x800'31c0     0x4  startup_stm32h743xx.o [5]
+  .text              ro code   0x800'31c4     0x4  startup_stm32h743xx.o [5]
+  .text              ro code   0x800'31c8     0x4  startup_stm32h743xx.o [5]
+  .text              ro code   0x800'31cc     0x4  startup_stm32h743xx.o [5]
+  .text              ro code   0x800'31d0     0x4  startup_stm32h743xx.o [5]
+  .rodata            const     0x800'31d4     0x0  zero_init3.o [9]
+  .rodata            const     0x800'31d4     0x0  packbits_init_single.o [9]
+  Initializer bytes  const     0x800'31d4    0x6b  <for P2-1>
+                             - 0x800'323f  0x2fa7
+
+"P2", part 1 of 3:                           0x8c
+  P2-1                        0x2000'0000    0x8c  <Init block>
+    .data            inited   0x2000'0000    0x2c  mfxstm32l152.o [1]
+    .data            inited   0x2000'002c    0x3c  stm32h743i_eval.o [2]
+    .data            inited   0x2000'0068    0x10  stm32h743i_eval.o [2]
+    .data            inited   0x2000'0078     0xc  stm32h7xx_hal.o [4]
+    .data            inited   0x2000'0084     0x8  system_stm32h7xx.o [3]
+                            - 0x2000'008c    0x8c
+
+"P2", part 2 of 3:                          0xafc
+  .bss               zero     0x2000'008c   0xa00  stm32h743i_eval_bus.o [2]
+  .bss               zero     0x2000'0a8c    0x58  stm32h743i_eval_bus.o [2]
+  .bss               zero     0x2000'0ae4    0x44  main.o [6]
+  .bss               zero     0x2000'0b28    0x34  stm32h743i_eval_io.o [2]
+  .bss               zero     0x2000'0b5c    0x1c  stm32h7xx_hal_flash.o [4]
+  .bss               zero     0x2000'0b78     0xc  stm32h743i_eval_io.o [2]
+  .bss               zero     0x2000'0b84     0x4  stm32h743i_eval_bus.o [2]
+                            - 0x2000'0b88   0xafc
+
+"P2", part 3 of 3:                          0x400
+  CSTACK                      0x2000'0b88   0x400  <Block>
+    CSTACK           uninit   0x2000'0b88   0x400  <Block tail>
+                            - 0x2000'0f88   0x400
+
+Unused ranges:
+
+         From           To      Size
+         ----           --      ----
+   0x800'323f   0x80f'ffff  0xf'cdc1
+  0x2000'0f88  0x2001'ffff  0x1'f078
+
+
+*******************************************************************************
+*** INIT TABLE
+***
+
+          Address      Size
+          -------      ----
+Zero (__iar_zero_init3)
+    1 destination range, total size 0xafc:
+          0x2000'008c  0xafc
+
+Copy/packbits (__iar_packbits_init_single3)
+    1 source range, total size 0x6b (76% of destination):
+           0x800'31d4   0x6b
+    1 destination range, total size 0x8c:
+          0x2000'0000   0x8c
+
+
+
+*******************************************************************************
+*** MODULE SUMMARY
+***
+
+    Module                    ro code  ro data  rw data
+    ------                    -------  -------  -------
+command line/config:
+    ---------------------------------------------------
+    Total:
+
+C:\Users\MaxDYi\STM32Cube\Repository\STM32Cube_FW_H7_V1.11.1\Projects\STM32H743I-EVAL\Examples\FLASH\FLASH_SwapBank\EWARM\FLASH_SwapBank_Bank1\Obj\Drivers\BSP\Components: [1]
+    mfxstm32l152.o              1'372       33       44
+    mfxstm32l152_reg.o             24
+    ---------------------------------------------------
+    Total:                      1'396       33       44
+
+C:\Users\MaxDYi\STM32Cube\Repository\STM32Cube_FW_H7_V1.11.1\Projects\STM32H743I-EVAL\Examples\FLASH\FLASH_SwapBank\EWARM\FLASH_SwapBank_Bank1\Obj\Drivers\BSP\STM32H743I-EVAL: [2]
+    stm32h743i_eval.o             534       58       76
+    stm32h743i_eval_bus.o       1'032      132    2'652
+    stm32h743i_eval_io.o          552                64
+    ---------------------------------------------------
+    Total:                      2'118      190    2'792
+
+C:\Users\MaxDYi\STM32Cube\Repository\STM32Cube_FW_H7_V1.11.1\Projects\STM32H743I-EVAL\Examples\FLASH\FLASH_SwapBank\EWARM\FLASH_SwapBank_Bank1\Obj\Drivers\CMSIS: [3]
+    system_stm32h7xx.o            156        7        8
+    ---------------------------------------------------
+    Total:                        156        7        8
+
+C:\Users\MaxDYi\STM32Cube\Repository\STM32Cube_FW_H7_V1.11.1\Projects\STM32H743I-EVAL\Examples\FLASH\FLASH_SwapBank\EWARM\FLASH_SwapBank_Bank1\Obj\Drivers\STM32H7xx_HAL_Driver: [4]
+    stm32h7xx_hal.o               242        9       12
+    stm32h7xx_hal_cortex.o        328
+    stm32h7xx_hal_exti.o           28
+    stm32h7xx_hal_flash.o         580                28
+    stm32h7xx_hal_flash_ex.o      776
+    stm32h7xx_hal_gpio.o          922
+    stm32h7xx_hal_i2c.o         1'564
+    stm32h7xx_hal_i2c_ex.o        126
+    stm32h7xx_hal_pwr_ex.o         72
+    stm32h7xx_hal_rcc.o         2'212
+    ---------------------------------------------------
+    Total:                      6'850        9       40
+
+C:\Users\MaxDYi\STM32Cube\Repository\STM32Cube_FW_H7_V1.11.1\Projects\STM32H743I-EVAL\Examples\FLASH\FLASH_SwapBank\EWARM\FLASH_SwapBank_Bank1\Obj\Example\EWARM: [5]
+    startup_stm32h743xx.o       1'232
+    ---------------------------------------------------
+    Total:                      1'232
+
+C:\Users\MaxDYi\STM32Cube\Repository\STM32Cube_FW_H7_V1.11.1\Projects\STM32H743I-EVAL\Examples\FLASH\FLASH_SwapBank\EWARM\FLASH_SwapBank_Bank1\Obj\Example\User: [6]
+    main.o                        512                68
+    stm32h7xx_it.o                 28
+    ---------------------------------------------------
+    Total:                        540                68
+
+dl7M_tlf.a: [7]
+    exit.o                          4
+    low_level_init.o                4
+    ---------------------------------------------------
+    Total:                          8
+
+m7M_tlv.a: [8]
+    fpinit_M.o                     34
+    ---------------------------------------------------
+    Total:                         34
+
+rt7M_tl.a: [9]
+    cexit.o                        10
+    cmain.o                        30
+    cstartup_M.o                   28
+    data_init.o                    40
+    packbits_init_single.o         58
+    zero_init3.o                   56
+    ---------------------------------------------------
+    Total:                        222
+
+shb_l.a: [10]
+    exit.o                         20
+    ---------------------------------------------------
+    Total:                         20
+
+    Gaps                           14        2
+    Linker created                          32    1'024
+-------------------------------------------------------
+    Grand Total:               12'590      273    3'976
+
+
+*******************************************************************************
+*** ENTRY LIST
+***
+
+Entry                       Address   Size  Type      Object
+-----                       -------   ----  ----      ------
+.iar.init_table$$Base    0x800'2eec          --   Gb  - Linker created -
+.iar.init_table$$Limit   0x800'2f0c          --   Gb  - Linker created -
+?main                    0x800'2f0d         Code  Gb  cmain.o [9]
+ADC3_IRQHandler          0x800'3185         Code  Wk  startup_stm32h743xx.o [5]
+ADC_IRQHandler           0x800'2ff5         Code  Wk  startup_stm32h743xx.o [5]
+BDMA_Channel0_IRQHandler
+                         0x800'318d         Code  Wk  startup_stm32h743xx.o [5]
+BDMA_Channel1_IRQHandler
+                         0x800'3191         Code  Wk  startup_stm32h743xx.o [5]
+BDMA_Channel2_IRQHandler
+                         0x800'3195         Code  Wk  startup_stm32h743xx.o [5]
+BDMA_Channel3_IRQHandler
+                         0x800'3199         Code  Wk  startup_stm32h743xx.o [5]
+BDMA_Channel4_IRQHandler
+                         0x800'319d         Code  Wk  startup_stm32h743xx.o [5]
+BDMA_Channel5_IRQHandler
+                         0x800'31a1         Code  Wk  startup_stm32h743xx.o [5]
+BDMA_Channel6_IRQHandler
+                         0x800'31a5         Code  Wk  startup_stm32h743xx.o [5]
+BDMA_Channel7_IRQHandler
+                         0x800'31a9         Code  Wk  startup_stm32h743xx.o [5]
+BSP_GetTick              0x800'1acd    0x4  Code  Gb  stm32h743i_eval_bus.o [2]
+BSP_I2C1_DeInit          0x800'1a4b   0x3a  Code  Gb  stm32h743i_eval_bus.o [2]
+BSP_I2C1_Init            0x800'1909  0x142  Code  Gb  stm32h743i_eval_bus.o [2]
+BSP_I2C1_ReadReg         0x800'1aa3   0x1e  Code  Gb  stm32h743i_eval_bus.o [2]
+BSP_I2C1_WriteReg        0x800'1a85   0x1e  Code  Gb  stm32h743i_eval_bus.o [2]
+BSP_IOEXPANDER_ITConfig
+                         0x800'27f1   0x76  Code  Gb  stm32h743i_eval_io.o [2]
+BSP_IOEXPANDER_ITConfig::mfx_io_it_enabled
+                        0x2000'0b78    0x4  Data  Lc  stm32h743i_eval_io.o [2]
+BSP_IOEXPANDER_Init      0x800'2679   0xa8  Code  Gb  stm32h743i_eval_io.o [2]
+BSP_IO_Callback          0x800'28bd    0x2  Code  Wk  stm32h743i_eval_io.o [2]
+BSP_IO_Init              0x800'2721   0x5e  Code  Gb  stm32h743i_eval_io.o [2]
+BSP_IO_TogglePin         0x800'27ab   0x46  Code  Gb  stm32h743i_eval_io.o [2]
+BSP_IO_WritePin          0x800'277f   0x2c  Code  Gb  stm32h743i_eval_io.o [2]
+BSP_LED_Init             0x800'28c1   0x98  Code  Gb  stm32h743i_eval.o [2]
+BSP_LED_Off              0x800'2959   0x30  Code  Gb  stm32h743i_eval.o [2]
+BSP_LED_Toggle           0x800'2997   0x34  Code  Gb  stm32h743i_eval.o [2]
+BSP_PB_Callback          0x800'2ad5    0x2  Code  Wk  stm32h743i_eval.o [2]
+BSP_PB_GetState          0x800'2a75   0x14  Code  Gb  stm32h743i_eval.o [2]
+BSP_PB_Init              0x800'29cb   0xaa  Code  Gb  stm32h743i_eval.o [2]
+BSP_PB_Init::BSP_BUTTON_PRIO
+                        0x2000'0044    0xc  Data  Lc  stm32h743i_eval.o [2]
+BSP_PB_Init::BUTTON_EXTI_LINE
+                         0x800'2ac8    0xc  Data  Lc  stm32h743i_eval.o [2]
+BSP_PB_Init::ButtonCallback
+                        0x2000'0038    0xc  Data  Lc  stm32h743i_eval.o [2]
+BUTTON_IRQn              0x800'2ac0    0x8  Data  Lc  stm32h743i_eval.o [2]
+BUTTON_PIN               0x800'2ab8    0x8  Data  Lc  stm32h743i_eval.o [2]
+BUTTON_PORT             0x2000'002c    0xc  Data  Lc  stm32h743i_eval.o [2]
+BUTTON_TAMPER_EXTI_Callback
+                         0x800'2a9b    0x6  Code  Lc  stm32h743i_eval.o [2]
+BUTTON_USER_EXTI_Callback
+                         0x800'2aa1    0x6  Code  Lc  stm32h743i_eval.o [2]
+BUTTON_WAKEUP_EXTI_Callback
+                         0x800'2a95    0x6  Code  Lc  stm32h743i_eval.o [2]
+BusFault_Handler         0x800'2f5b    0x2  Code  Gb  stm32h7xx_it.o [6]
+CEC_IRQHandler           0x800'3109         Code  Wk  startup_stm32h743xx.o [5]
+COMP1_IRQHandler         0x800'31ad         Code  Wk  startup_stm32h743xx.o [5]
+CRS_IRQHandler           0x800'31c5         Code  Wk  startup_stm32h743xx.o [5]
+CSTACK$$Base            0x2000'0b88          --   Gb  - Linker created -
+CSTACK$$Limit           0x2000'0f88          --   Gb  - Linker created -
+D1CorePrescTable         0x800'2dd4   0x10  Data  Gb  system_stm32h7xx.o [3]
+DCMI_IRQHandler          0x800'30cd         Code  Wk  startup_stm32h743xx.o [5]
+DFSDM1_FLT0_IRQHandler   0x800'3149         Code  Wk  startup_stm32h743xx.o [5]
+DFSDM1_FLT1_IRQHandler   0x800'314d         Code  Wk  startup_stm32h743xx.o [5]
+DFSDM1_FLT2_IRQHandler   0x800'3151         Code  Wk  startup_stm32h743xx.o [5]
+DFSDM1_FLT3_IRQHandler   0x800'3155         Code  Wk  startup_stm32h743xx.o [5]
+DMA1_Stream0_IRQHandler
+                         0x800'2fd9         Code  Wk  startup_stm32h743xx.o [5]
+DMA1_Stream1_IRQHandler
+                         0x800'2fdd         Code  Wk  startup_stm32h743xx.o [5]
+DMA1_Stream2_IRQHandler
+                         0x800'2fe1         Code  Wk  startup_stm32h743xx.o [5]
+DMA1_Stream3_IRQHandler
+                         0x800'2fe5         Code  Wk  startup_stm32h743xx.o [5]
+DMA1_Stream4_IRQHandler
+                         0x800'2fe9         Code  Wk  startup_stm32h743xx.o [5]
+DMA1_Stream5_IRQHandler
+                         0x800'2fed         Code  Wk  startup_stm32h743xx.o [5]
+DMA1_Stream6_IRQHandler
+                         0x800'2ff1         Code  Wk  startup_stm32h743xx.o [5]
+DMA1_Stream7_IRQHandler
+                         0x800'3061         Code  Wk  startup_stm32h743xx.o [5]
+DMA2D_IRQHandler         0x800'30f9         Code  Wk  startup_stm32h743xx.o [5]
+DMA2_Stream0_IRQHandler
+                         0x800'3085         Code  Wk  startup_stm32h743xx.o [5]
+DMA2_Stream1_IRQHandler
+                         0x800'3089         Code  Wk  startup_stm32h743xx.o [5]
+DMA2_Stream2_IRQHandler
+                         0x800'308d         Code  Wk  startup_stm32h743xx.o [5]
+DMA2_Stream3_IRQHandler
+                         0x800'3091         Code  Wk  startup_stm32h743xx.o [5]
+DMA2_Stream4_IRQHandler
+                         0x800'3095         Code  Wk  startup_stm32h743xx.o [5]
+DMA2_Stream5_IRQHandler
+                         0x800'30a5         Code  Wk  startup_stm32h743xx.o [5]
+DMA2_Stream6_IRQHandler
+                         0x800'30a9         Code  Wk  startup_stm32h743xx.o [5]
+DMA2_Stream7_IRQHandler
+                         0x800'30ad         Code  Wk  startup_stm32h743xx.o [5]
+DMAMUX1_OVR_IRQHandler   0x800'3129         Code  Wk  startup_stm32h743xx.o [5]
+DMAMUX2_OVR_IRQHandler   0x800'3189         Code  Wk  startup_stm32h743xx.o [5]
+DebugMon_Handler         0x800'2f61    0x2  Code  Gb  stm32h7xx_it.o [6]
+ECC_IRQHandler           0x800'31c9         Code  Wk  startup_stm32h743xx.o [5]
+ETH_IRQHandler           0x800'3099         Code  Wk  startup_stm32h743xx.o [5]
+ETH_WKUP_IRQHandler      0x800'309d         Code  Wk  startup_stm32h743xx.o [5]
+EXTI0_IRQHandler         0x800'2fc5         Code  Wk  startup_stm32h743xx.o [5]
+EXTI15_10_IRQHandler     0x800'2f69    0x8  Code  Gb  stm32h7xx_it.o [6]
+EXTI1_IRQHandler         0x800'2fc9         Code  Wk  startup_stm32h743xx.o [5]
+EXTI2_IRQHandler         0x800'2fcd         Code  Wk  startup_stm32h743xx.o [5]
+EXTI3_IRQHandler         0x800'2fd1         Code  Wk  startup_stm32h743xx.o [5]
+EXTI4_IRQHandler         0x800'2fd5         Code  Wk  startup_stm32h743xx.o [5]
+EXTI9_5_IRQHandler       0x800'3009         Code  Wk  startup_stm32h743xx.o [5]
+FDCAN1_IT0_IRQHandler    0x800'2ff9         Code  Wk  startup_stm32h743xx.o [5]
+FDCAN1_IT1_IRQHandler    0x800'3001         Code  Wk  startup_stm32h743xx.o [5]
+FDCAN2_IT0_IRQHandler    0x800'2ffd         Code  Wk  startup_stm32h743xx.o [5]
+FDCAN2_IT1_IRQHandler    0x800'3005         Code  Wk  startup_stm32h743xx.o [5]
+FDCAN_CAL_IRQHandler     0x800'30a1         Code  Wk  startup_stm32h743xx.o [5]
+FLASH_CRC_WaitForLastOperation
+                         0x800'25b1   0x84  Code  Gb  stm32h7xx_hal_flash.o [4]
+FLASH_IRQHandler         0x800'2fbd         Code  Wk  startup_stm32h743xx.o [5]
+FLASH_OB_WaitForLastOperation
+                         0x800'2563   0x4e  Code  Gb  stm32h7xx_hal_flash.o [4]
+FLASH_WaitForLastOperation
+                         0x800'24b7   0xac  Code  Gb  stm32h7xx_hal_flash.o [4]
+FMC_IRQHandler           0x800'3065         Code  Wk  startup_stm32h743xx.o [5]
+FPU_IRQHandler           0x800'30d5         Code  Wk  startup_stm32h743xx.o [5]
+HAL_Delay                0x800'2d21   0x28  Code  Wk  stm32h7xx_hal.o [4]
+HAL_EXTI_GetHandle       0x800'28b1    0xc  Code  Gb  stm32h7xx_hal_exti.o [4]
+HAL_EXTI_RegisterCallback
+                         0x800'28a1   0x10  Code  Gb  stm32h7xx_hal_exti.o [4]
+HAL_FLASHEx_OBGetConfig
+                         0x800'2337   0xe0  Code  Gb  stm32h7xx_hal_flash_ex.o [4]
+HAL_FLASHEx_OBProgram    0x800'212d  0x1f8  Code  Gb  stm32h7xx_hal_flash_ex.o [4]
+HAL_FLASH_OB_Launch      0x800'2487   0x30  Code  Gb  stm32h7xx_hal_flash.o [4]
+HAL_FLASH_OB_Unlock      0x800'2467   0x20  Code  Gb  stm32h7xx_hal_flash.o [4]
+HAL_FLASH_Unlock         0x800'2435   0x32  Code  Gb  stm32h7xx_hal_flash.o [4]
+HAL_GPIO_DeInit          0x800'1ec7  0x138  Code  Gb  stm32h7xx_hal_gpio.o [4]
+HAL_GPIO_EXTI_Callback   0x800'20a9    0x2  Code  Wk  stm32h7xx_hal_gpio.o [4]
+HAL_GPIO_EXTI_IRQHandler
+                         0x800'2023   0x12  Code  Gb  stm32h7xx_hal_gpio.o [4]
+HAL_GPIO_Init            0x800'1cd9  0x1ee  Code  Gb  stm32h7xx_hal_gpio.o [4]
+HAL_GPIO_ReadPin         0x800'1fff    0xc  Code  Gb  stm32h7xx_hal_gpio.o [4]
+HAL_GPIO_TogglePin       0x800'2013   0x10  Code  Gb  stm32h7xx_hal_gpio.o [4]
+HAL_GPIO_WritePin        0x800'200b    0x8  Code  Gb  stm32h7xx_hal_gpio.o [4]
+HAL_GetREVID             0x800'138f    0x8  Code  Gb  stm32h7xx_hal.o [4]
+HAL_GetTick              0x800'08b5    0xc  Code  Wk  stm32h7xx_hal.o [4]
+HAL_I2CEx_ConfigAnalogFilter
+                         0x800'20ad   0x2a  Code  Gb  stm32h7xx_hal_i2c_ex.o [4]
+HAL_I2CEx_ConfigDigitalFilter
+                         0x800'20d7   0x26  Code  Gb  stm32h7xx_hal_i2c_ex.o [4]
+HAL_I2C_DeInit           0x800'033b   0x2a  Code  Gb  stm32h7xx_hal_i2c.o [4]
+HAL_I2C_GetError         0x800'067b    0x4  Code  Gb  stm32h7xx_hal_i2c.o [4]
+HAL_I2C_GetState         0x800'0675    0x6  Code  Gb  stm32h7xx_hal_i2c.o [4]
+HAL_I2C_Init             0x800'0299   0xa2  Code  Gb  stm32h7xx_hal_i2c.o [4]
+HAL_I2C_Mem_Read         0x800'04dd   0xde  Code  Gb  stm32h7xx_hal_i2c.o [4]
+HAL_I2C_Mem_Write        0x800'037f   0xd6  Code  Gb  stm32h7xx_hal_i2c.o [4]
+HAL_I2C_MspDeInit        0x800'08b3    0x2  Code  Wk  stm32h7xx_hal_i2c.o [4]
+HAL_I2C_MspInit          0x800'08b1    0x2  Code  Wk  stm32h7xx_hal_i2c.o [4]
+HAL_IncTick              0x800'2f71   0x10  Code  Wk  stm32h7xx_hal.o [4]
+HAL_Init                 0x800'1345   0x4a  Code  Gb  stm32h7xx_hal.o [4]
+HAL_InitTick             0x800'1889   0x44  Code  Wk  stm32h7xx_hal.o [4]
+HAL_MPU_ConfigRegion     0x800'1485   0x4c  Code  Gb  stm32h7xx_hal_cortex.o [4]
+HAL_MPU_Disable          0x800'1457   0x14  Code  Gb  stm32h7xx_hal_cortex.o [4]
+HAL_MPU_Enable           0x800'146b   0x1a  Code  Gb  stm32h7xx_hal_cortex.o [4]
+HAL_MspInit              0x800'18cd    0x2  Code  Wk  stm32h7xx_hal.o [4]
+HAL_NVIC_EnableIRQ       0x800'141d   0x16  Code  Gb  stm32h7xx_hal_cortex.o [4]
+HAL_NVIC_SetPriority     0x800'13e1   0x3a  Code  Gb  stm32h7xx_hal_cortex.o [4]
+HAL_NVIC_SetPriorityGrouping
+                         0x800'13c7   0x1a  Code  Gb  stm32h7xx_hal_cortex.o [4]
+HAL_PWREx_ConfigSupply   0x800'2cd9   0x44  Code  Gb  stm32h7xx_hal_pwr_ex.o [4]
+HAL_RCC_ClockConfig      0x800'14f5  0x1ac  Code  Gb  stm32h7xx_hal_rcc.o [4]
+HAL_RCC_GetHCLKFreq      0x800'17fb   0x30  Code  Gb  stm32h7xx_hal_rcc.o [4]
+HAL_RCC_GetPCLK1Freq     0x800'182b   0x10  Code  Gb  stm32h7xx_hal_rcc.o [4]
+HAL_RCC_GetSysClockFreq
+                         0x800'16fd   0xf0  Code  Gb  stm32h7xx_hal_rcc.o [4]
+HAL_RCC_OscConfig        0x800'0e35  0x510  Code  Wk  stm32h7xx_hal_rcc.o [4]
+HAL_SYSTICK_Config       0x800'1433   0x24  Code  Gb  stm32h7xx_hal_cortex.o [4]
+HRTIM1_FLT_IRQHandler    0x800'3145         Code  Wk  startup_stm32h743xx.o [5]
+HRTIM1_Master_IRQHandler
+                         0x800'312d         Code  Wk  startup_stm32h743xx.o [5]
+HRTIM1_TIMA_IRQHandler   0x800'3131         Code  Wk  startup_stm32h743xx.o [5]
+HRTIM1_TIMB_IRQHandler   0x800'3135         Code  Wk  startup_stm32h743xx.o [5]
+HRTIM1_TIMC_IRQHandler   0x800'3139         Code  Wk  startup_stm32h743xx.o [5]
+HRTIM1_TIMD_IRQHandler   0x800'313d         Code  Wk  startup_stm32h743xx.o [5]
+HRTIM1_TIME_IRQHandler   0x800'3141         Code  Wk  startup_stm32h743xx.o [5]
+HSEM1_IRQHandler         0x800'3181         Code  Wk  startup_stm32h743xx.o [5]
+HardFault_Handler        0x800'2f57    0x2  Code  Gb  stm32h7xx_it.o [6]
+I2C1_ER_IRQHandler       0x800'302d         Code  Wk  startup_stm32h743xx.o [5]
+I2C1_EV_IRQHandler       0x800'3029         Code  Wk  startup_stm32h743xx.o [5]
+I2C1_ReadReg             0x800'1c81    0xa  Code  Lc  stm32h743i_eval_bus.o [2]
+I2C1_WriteReg            0x800'1c75    0xc  Code  Lc  stm32h743i_eval_bus.o [2]
+I2C2_ER_IRQHandler       0x800'3035         Code  Wk  startup_stm32h743xx.o [5]
+I2C2_EV_IRQHandler       0x800'3031         Code  Wk  startup_stm32h743xx.o [5]
+I2C3_ER_IRQHandler       0x800'30b9         Code  Wk  startup_stm32h743xx.o [5]
+I2C3_EV_IRQHandler       0x800'30b5         Code  Wk  startup_stm32h743xx.o [5]
+I2C4_ER_IRQHandler       0x800'3111         Code  Wk  startup_stm32h743xx.o [5]
+I2C4_EV_IRQHandler       0x800'310d         Code  Wk  startup_stm32h743xx.o [5]
+I2C_Charac               0x800'2de4   0x84  Data  Lc  stm32h743i_eval_bus.o [2]
+I2C_Compute_PRESC_SCLDEL_SDADEL
+                         0x800'1ad1   0xbc  Code  Lc  stm32h743i_eval_bus.o [2]
+I2C_Compute_SCLL_SCLH    0x800'1b8d   0xe8  Code  Lc  stm32h743i_eval_bus.o [2]
+I2C_Flush_TXDR           0x800'0681   0x1c  Code  Lc  stm32h7xx_hal_i2c.o [4]
+I2C_IsErrorOccurred      0x800'078d   0xec  Code  Lc  stm32h7xx_hal_i2c.o [4]
+I2C_TransferConfig       0x800'0883   0x26  Code  Lc  stm32h7xx_hal_i2c.o [4]
+I2C_WaitOnFlagUntilTimeout
+                         0x800'069d   0x54  Code  Lc  stm32h7xx_hal_i2c.o [4]
+I2C_WaitOnSTOPFlagUntilTimeout
+                         0x800'074b   0x3a  Code  Lc  stm32h7xx_hal_i2c.o [4]
+I2C_WaitOnTXISFlagUntilTimeout
+                         0x800'06f1   0x42  Code  Lc  stm32h7xx_hal_i2c.o [4]
+I2c1InitCounter         0x2000'0a8c    0x4  Data  Lc  stm32h743i_eval_bus.o [2]
+I2c_valid_timing        0x2000'008c  0xa00  Data  Lc  stm32h743i_eval_bus.o [2]
+I2c_valid_timing_nbr    0x2000'0b84    0x4  Data  Lc  stm32h743i_eval_bus.o [2]
+IO_Ctx                  0x2000'0b28    0x8  Data  Gb  stm32h743i_eval_io.o [2]
+IO_EXTI_Callback         0x800'2895    0x6  Code  Lc  stm32h743i_eval_io.o [2]
+Io_CompObj              0x2000'0b34   0x28  Data  Gb  stm32h743i_eval_io.o [2]
+Io_Drv                  0x2000'0b30    0x4  Data  Lc  stm32h743i_eval_io.o [2]
+JPEG_IRQHandler          0x800'3175         Code  Wk  startup_stm32h743xx.o [5]
+LED_PIN                  0x800'2aa8   0x10  Data  Lc  stm32h743i_eval.o [2]
+LED_PORT                0x2000'0068   0x10  Data  Lc  stm32h743i_eval.o [2]
+LPTIM1_IRQHandler        0x800'3105         Code  Wk  startup_stm32h743xx.o [5]
+LPTIM2_IRQHandler        0x800'31b1         Code  Wk  startup_stm32h743xx.o [5]
+LPTIM3_IRQHandler        0x800'31b5         Code  Wk  startup_stm32h743xx.o [5]
+LPTIM4_IRQHandler        0x800'31b9         Code  Wk  startup_stm32h743xx.o [5]
+LPTIM5_IRQHandler        0x800'31bd         Code  Wk  startup_stm32h743xx.o [5]
+LPUART1_IRQHandler       0x800'31c1         Code  Wk  startup_stm32h743xx.o [5]
+LTDC_ER_IRQHandler       0x800'30f5         Code  Wk  startup_stm32h743xx.o [5]
+LTDC_IRQHandler          0x800'30f1         Code  Wk  startup_stm32h743xx.o [5]
+MDIOS_IRQHandler         0x800'3171         Code  Wk  startup_stm32h743xx.o [5]
+MDIOS_WKUP_IRQHandler    0x800'316d         Code  Wk  startup_stm32h743xx.o [5]
+MDMA_IRQHandler          0x800'3179         Code  Wk  startup_stm32h743xx.o [5]
+MFXSTM32L152_DeInit      0x800'08f7   0x12  Code  Gb  mfxstm32l152.o [1]
+MFXSTM32L152_DisableITSource
+                         0x800'096d   0x1c  Code  Gb  mfxstm32l152.o [1]
+MFXSTM32L152_EnableITSource
+                         0x800'0953   0x1a  Code  Gb  mfxstm32l152.o [1]
+MFXSTM32L152_IO_ClearIT
+                         0x800'0c71   0x56  Code  Gb  mfxstm32l152.o [1]
+MFXSTM32L152_IO_DisableIT
+                         0x800'0bf7    0xa  Code  Gb  mfxstm32l152.o [1]
+MFXSTM32L152_IO_DisablePinIT
+                         0x800'0c09    0x6  Code  Gb  mfxstm32l152.o [1]
+MFXSTM32L152_IO_Driver  0x2000'0000   0x2c  Data  Gb  mfxstm32l152.o [1]
+MFXSTM32L152_IO_EnableIT
+                         0x800'0bed    0xa  Code  Gb  mfxstm32l152.o [1]
+MFXSTM32L152_IO_EnablePinIT
+                         0x800'0c01    0x8  Code  Gb  mfxstm32l152.o [1]
+MFXSTM32L152_IO_ITStatus
+                         0x800'0c21   0x30  Code  Gb  mfxstm32l152.o [1]
+MFXSTM32L152_IO_Init     0x800'0a85   0xf0  Code  Gb  mfxstm32l152.o [1]
+MFXSTM32L152_IO_InitPin
+                         0x800'0b7b    0xa  Code  Gb  mfxstm32l152.o [1]
+MFXSTM32L152_IO_ReadPin
+                         0x800'0bbd   0x30  Code  Gb  mfxstm32l152.o [1]
+MFXSTM32L152_IO_SetIrqEvtMode
+                         0x800'0b85    0xa  Code  Gb  mfxstm32l152.o [1]
+MFXSTM32L152_IO_SetIrqTypeMode
+                         0x800'0b8f    0xa  Code  Gb  mfxstm32l152.o [1]
+MFXSTM32L152_IO_Start    0x800'0a23   0x52  Code  Gb  mfxstm32l152.o [1]
+MFXSTM32L152_IO_WritePin
+                         0x800'0b99   0x24  Code  Gb  mfxstm32l152.o [1]
+MFXSTM32L152_Init        0x800'08c1   0x36  Code  Gb  mfxstm32l152.o [1]
+MFXSTM32L152_ReadID      0x800'092b   0x28  Code  Gb  mfxstm32l152.o [1]
+MFXSTM32L152_ReadRegWrap
+                         0x800'0e05    0xc  Code  Lc  mfxstm32l152.o [1]
+MFXSTM32L152_RegisterBusIO
+                         0x800'0cf5   0x3a  Code  Gb  mfxstm32l152.o [1]
+MFXSTM32L152_Reset       0x800'0909    0x6  Code  Gb  mfxstm32l152.o [1]
+MFXSTM32L152_SetIrqOutPinPolarity
+                         0x800'09b9   0x1c  Code  Gb  mfxstm32l152.o [1]
+MFXSTM32L152_SetIrqOutPinType
+                         0x800'09d5   0x1c  Code  Gb  mfxstm32l152.o [1]
+MFXSTM32L152_WriteRegWrap
+                         0x800'0e11    0xc  Code  Lc  mfxstm32l152.o [1]
+MFXSTM32L152_reg24_setPinValue
+                         0x800'0d2f   0xbc  Code  Lc  mfxstm32l152.o [1]
+MX_I2C1_Init             0x800'2071   0x38  Code  Wk  stm32h743i_eval_bus.o [2]
+MemManage_Handler        0x800'2f59    0x2  Code  Gb  stm32h7xx_it.o [6]
+NMI_Handler              0x800'2f55    0x2  Code  Gb  stm32h7xx_it.o [6]
+OBInit                  0x2000'0ae4   0x44  Data  Gb  main.o [6]
+OTG_FS_EP1_IN_IRQHandler
+                         0x800'311d         Code  Wk  startup_stm32h743xx.o [5]
+OTG_FS_EP1_OUT_IRQHandler
+                         0x800'3119         Code  Wk  startup_stm32h743xx.o [5]
+OTG_FS_IRQHandler        0x800'3125         Code  Wk  startup_stm32h743xx.o [5]
+OTG_FS_WKUP_IRQHandler   0x800'3121         Code  Wk  startup_stm32h743xx.o [5]
+OTG_HS_EP1_IN_IRQHandler
+                         0x800'30c1         Code  Wk  startup_stm32h743xx.o [5]
+OTG_HS_EP1_OUT_IRQHandler
+                         0x800'30bd         Code  Wk  startup_stm32h743xx.o [5]
+OTG_HS_IRQHandler        0x800'30c9         Code  Wk  startup_stm32h743xx.o [5]
+OTG_HS_WKUP_IRQHandler   0x800'30c5         Code  Wk  startup_stm32h743xx.o [5]
+PVD_AVD_IRQHandler       0x800'2fb1         Code  Wk  startup_stm32h743xx.o [5]
+PendSV_Handler           0x800'2f63    0x2  Code  Gb  stm32h7xx_it.o [6]
+QUADSPI_IRQHandler       0x800'3101         Code  Wk  startup_stm32h743xx.o [5]
+RCC_IRQHandler           0x800'2fc1         Code  Wk  startup_stm32h743xx.o [5]
+RNG_IRQHandler           0x800'30d1         Code  Wk  startup_stm32h743xx.o [5]
+RTC_Alarm_IRQHandler     0x800'304d         Code  Wk  startup_stm32h743xx.o [5]
+RTC_WKUP_IRQHandler      0x800'2fb9         Code  Wk  startup_stm32h743xx.o [5]
+Region$$Table$$Base      0x800'2eec          --   Gb  - Linker created -
+Region$$Table$$Limit     0x800'2f0c          --   Gb  - Linker created -
+Reset_Handler            0x800'2f9d         Code  Wk  startup_stm32h743xx.o [5]
+SAI1_IRQHandler          0x800'30ed         Code  Wk  startup_stm32h743xx.o [5]
+SAI2_IRQHandler          0x800'30fd         Code  Wk  startup_stm32h743xx.o [5]
+SAI3_IRQHandler          0x800'3159         Code  Wk  startup_stm32h743xx.o [5]
+SAI4_IRQHandler          0x800'31cd         Code  Wk  startup_stm32h743xx.o [5]
+SDMMC1_IRQHandler        0x800'3069         Code  Wk  startup_stm32h743xx.o [5]
+SDMMC2_IRQHandler        0x800'317d         Code  Wk  startup_stm32h743xx.o [5]
+SPDIF_RX_IRQHandler      0x800'3115         Code  Wk  startup_stm32h743xx.o [5]
+SPI1_IRQHandler          0x800'3039         Code  Wk  startup_stm32h743xx.o [5]
+SPI2_IRQHandler          0x800'303d         Code  Wk  startup_stm32h743xx.o [5]
+SPI3_IRQHandler          0x800'3071         Code  Wk  startup_stm32h743xx.o [5]
+SPI4_IRQHandler          0x800'30e1         Code  Wk  startup_stm32h743xx.o [5]
+SPI5_IRQHandler          0x800'30e5         Code  Wk  startup_stm32h743xx.o [5]
+SPI6_IRQHandler          0x800'30e9         Code  Wk  startup_stm32h743xx.o [5]
+SVC_Handler              0x800'2f5f    0x2  Code  Gb  stm32h7xx_it.o [6]
+SWPMI1_IRQHandler        0x800'315d         Code  Wk  startup_stm32h743xx.o [5]
+SysTick_Handler          0x800'2f65    0x4  Code  Gb  stm32h7xx_it.o [6]
+SystemCoreClock         0x2000'0084    0x4  Data  Gb  system_stm32h7xx.o [3]
+SystemD2Clock           0x2000'0088    0x4  Data  Gb  system_stm32h7xx.o [3]
+SystemInit               0x800'2d49   0x6e  Code  Gb  system_stm32h7xx.o [3]
+TAMP_STAMP_IRQHandler    0x800'2fb5         Code  Wk  startup_stm32h743xx.o [5]
+TIM15_IRQHandler         0x800'3161         Code  Wk  startup_stm32h743xx.o [5]
+TIM16_IRQHandler         0x800'3165         Code  Wk  startup_stm32h743xx.o [5]
+TIM17_IRQHandler         0x800'3169         Code  Wk  startup_stm32h743xx.o [5]
+TIM1_BRK_IRQHandler      0x800'300d         Code  Wk  startup_stm32h743xx.o [5]
+TIM1_CC_IRQHandler       0x800'3019         Code  Wk  startup_stm32h743xx.o [5]
+TIM1_TRG_COM_IRQHandler
+                         0x800'3015         Code  Wk  startup_stm32h743xx.o [5]
+TIM1_UP_IRQHandler       0x800'3011         Code  Wk  startup_stm32h743xx.o [5]
+TIM2_IRQHandler          0x800'301d         Code  Wk  startup_stm32h743xx.o [5]
+TIM3_IRQHandler          0x800'3021         Code  Wk  startup_stm32h743xx.o [5]
+TIM4_IRQHandler          0x800'3025         Code  Wk  startup_stm32h743xx.o [5]
+TIM5_IRQHandler          0x800'306d         Code  Wk  startup_stm32h743xx.o [5]
+TIM6_DAC_IRQHandler      0x800'307d         Code  Wk  startup_stm32h743xx.o [5]
+TIM7_IRQHandler          0x800'3081         Code  Wk  startup_stm32h743xx.o [5]
+TIM8_BRK_TIM12_IRQHandler
+                         0x800'3051         Code  Wk  startup_stm32h743xx.o [5]
+TIM8_CC_IRQHandler       0x800'305d         Code  Wk  startup_stm32h743xx.o [5]
+TIM8_TRG_COM_TIM14_IRQHandler
+                         0x800'3059         Code  Wk  startup_stm32h743xx.o [5]
+TIM8_UP_TIM13_IRQHandler
+                         0x800'3055         Code  Wk  startup_stm32h743xx.o [5]
+UART4_IRQHandler         0x800'3075         Code  Wk  startup_stm32h743xx.o [5]
+UART5_IRQHandler         0x800'3079         Code  Wk  startup_stm32h743xx.o [5]
+UART7_IRQHandler         0x800'30d9         Code  Wk  startup_stm32h743xx.o [5]
+UART8_IRQHandler         0x800'30dd         Code  Wk  startup_stm32h743xx.o [5]
+USART1_IRQHandler        0x800'3041         Code  Wk  startup_stm32h743xx.o [5]
+USART2_IRQHandler        0x800'3045         Code  Wk  startup_stm32h743xx.o [5]
+USART3_IRQHandler        0x800'3049         Code  Wk  startup_stm32h743xx.o [5]
+USART6_IRQHandler        0x800'30b1         Code  Wk  startup_stm32h743xx.o [5]
+UsageFault_Handler       0x800'2f5d    0x2  Code  Gb  stm32h7xx_it.o [6]
+WAKEUP_PIN_IRQHandler    0x800'31d1         Code  Wk  startup_stm32h743xx.o [5]
+WWDG_IRQHandler          0x800'2fad         Code  Wk  startup_stm32h743xx.o [5]
+__NVIC_SetPriority       0x800'13ad   0x1a  Code  Lc  stm32h7xx_hal_cortex.o [4]
+__cmain                  0x800'2f0d         Code  Gb  cmain.o [9]
+__exit                   0x800'2f41   0x14  Code  Gb  exit.o [10]
+__iar_data_init3         0x800'2ea1   0x28  Code  Gb  data_init.o [9]
+__iar_init_vfp           0x800'2ec9         Code  Gb  fpinit_M.o [8]
+__iar_packbits_init_single3
+                         0x800'18cf   0x3a  Code  Gb  packbits_init_single.o [9]
+__iar_program_start      0x800'2f81         Code  Gb  cstartup_M.o [9]
+__iar_zero_init3         0x800'2e69   0x38  Code  Gb  zero_init3.o [9]
+__low_level_init         0x800'2f2b    0x4  Code  Gb  low_level_init.o [7]
+__vector_table           0x800'0000         Data  Gb  startup_stm32h743xx.o [5]
+_call_main               0x800'2f19         Code  Gb  cmain.o [9]
+_exit                    0x800'2f35         Code  Gb  cexit.o [9]
+exit                     0x800'2f2f    0x4  Code  Gb  exit.o [7]
+hbus_i2c1               0x2000'0a90   0x54  Data  Gb  stm32h743i_eval_bus.o [2]
+hio_exti                0x2000'0b7c    0x8  Data  Gb  stm32h743i_eval_io.o [2]
+hpb_exti                0x2000'0050   0x18  Data  Gb  stm32h743i_eval.o [2]
+main                     0x800'2ad9  0x1e0  Code  Gb  main.o [6]
+mfxstm32l152_read_reg    0x800'0e1d    0xc  Code  Gb  mfxstm32l152_reg.o [1]
+mfxstm32l152_write_reg   0x800'0e29    0xc  Code  Gb  mfxstm32l152_reg.o [1]
+pFlash                  0x2000'0b5c   0x1c  Data  Gb  stm32h7xx_hal_flash.o [4]
+uwTick                  0x2000'007c    0x4  Data  Gb  stm32h7xx_hal.o [4]
+uwTickFreq              0x2000'0078    0x1  Data  Gb  stm32h7xx_hal.o [4]
+uwTickPrio              0x2000'0080    0x4  Data  Gb  stm32h7xx_hal.o [4]
+
+
+[1] = C:\Users\MaxDYi\STM32Cube\Repository\STM32Cube_FW_H7_V1.11.1\Projects\STM32H743I-EVAL\Examples\FLASH\FLASH_SwapBank\EWARM\FLASH_SwapBank_Bank1\Obj\Drivers\BSP\Components
+[2] = C:\Users\MaxDYi\STM32Cube\Repository\STM32Cube_FW_H7_V1.11.1\Projects\STM32H743I-EVAL\Examples\FLASH\FLASH_SwapBank\EWARM\FLASH_SwapBank_Bank1\Obj\Drivers\BSP\STM32H743I-EVAL
+[3] = C:\Users\MaxDYi\STM32Cube\Repository\STM32Cube_FW_H7_V1.11.1\Projects\STM32H743I-EVAL\Examples\FLASH\FLASH_SwapBank\EWARM\FLASH_SwapBank_Bank1\Obj\Drivers\CMSIS
+[4] = C:\Users\MaxDYi\STM32Cube\Repository\STM32Cube_FW_H7_V1.11.1\Projects\STM32H743I-EVAL\Examples\FLASH\FLASH_SwapBank\EWARM\FLASH_SwapBank_Bank1\Obj\Drivers\STM32H7xx_HAL_Driver
+[5] = C:\Users\MaxDYi\STM32Cube\Repository\STM32Cube_FW_H7_V1.11.1\Projects\STM32H743I-EVAL\Examples\FLASH\FLASH_SwapBank\EWARM\FLASH_SwapBank_Bank1\Obj\Example\EWARM
+[6] = C:\Users\MaxDYi\STM32Cube\Repository\STM32Cube_FW_H7_V1.11.1\Projects\STM32H743I-EVAL\Examples\FLASH\FLASH_SwapBank\EWARM\FLASH_SwapBank_Bank1\Obj\Example\User
+[7] = dl7M_tlf.a
+[8] = m7M_tlv.a
+[9] = rt7M_tl.a
+[10] = shb_l.a
+
+  12'590 bytes of readonly  code memory
+     273 bytes of readonly  data memory
+   3'976 bytes of readwrite data memory
+
+Errors: none
+Warnings: none
