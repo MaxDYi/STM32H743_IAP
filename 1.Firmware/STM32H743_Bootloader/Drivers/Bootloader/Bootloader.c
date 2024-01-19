@@ -3,20 +3,11 @@
  * @Author: MaxDYi
  * @Date: 2024-01-15 13:35:21
  * @LastEditors: MaxDYi
- * @LastEditTime: 2024-01-18 17:52:21
+ * @LastEditTime: 2024-01-19 11:48:00
  * @Description:
  */
 
 #include "Bootloader.h"
-
-#define BANK1_TO_BANK2 0x01
-#define BANK2_TO_BANK1 0x02
-
-#define APP_START_ADDRESS 0x08000000
-#define APP_MAX_SIZE 0x00100000
-#define APP_CRC_ADDRESS ((uint32_t)(APP_START_ADDRESS + APP_MAX_SIZE - 4))
-#define CRC_SUCCESS 1
-#define CRC_ERROR 0
 
 FLASH_OBProgramInitTypeDef OBInit;
 
@@ -39,6 +30,7 @@ void BootRun(void)
     {
         /* Swap to bank1 */
         /*Set OB SWAP_BANK_OPT to swap Bank1*/
+        HAL_GPIO_WritePin(LED_GREEN_GPIO_Port, LED_GREEN_Pin, GPIO_PIN_RESET);
         uint32_t targetAddress = 0x08100000;
         uint32_t sourceAddress = 0x08000000;
         for (uint8_t i = 0; i < 8; i++)
@@ -56,6 +48,11 @@ void BootRun(void)
     }
 }
 
+/**
+ * @description: 转换bank区域
+ * @param {uint8_t} bankNum
+ * @return {*}
+ */
 void SwapBank(uint8_t bankNum)
 {
     if (bankNum == 1)
@@ -93,6 +90,10 @@ void SwapBank(uint8_t bankNum)
     }
 }
 
+/**
+ * @description: 获取当前运行的bank区域
+ * @return {*}
+ */
 uint8_t GetBank(void)
 {
     uint32_t bank = 0;
@@ -130,24 +131,24 @@ uint32_t EraseBank(uint8_t bank)
     return err;
 }
 
-uint32_t GetAppCRC(void)
+uint32_t GetAppCRC(uint32_t startAddress, uint32_t size)
 {
-    uint32_t CRC_value = HAL_CRC_Calculate(&hcrc, (uint32_t *)APP_START_ADDRESS,
-                                           APP_MAX_SIZE / 4 - 1);
+    uint32_t CRC_value = HAL_CRC_Calculate(&hcrc, (uint32_t *)startAddress,
+                                           size / 4 - 1);
     return CRC_value;
 }
 
-uint32_t ReadAppCRC(void)
+uint32_t ReadAppCRC(uint32_t crcAddr)
 {
     uint32_t CRC_expected = 0;
-    CRC_expected = *(__IO uint32_t *)APP_CRC_ADDRESS;
+    CRC_expected = *(__IO uint32_t *)crcAddr;
     return CRC_expected;
 }
 
-uint8_t CheckAppCRC(void)
+uint8_t CheckAppCRC(uint32_t startAddress, uint32_t appSize, uint32_t crcAddr)
 {
-    uint32_t CRC_value = GetAppCRC();
-    uint32_t CRC_expected = ReadAppCRC();
+    uint32_t CRC_value = GetAppCRC(startAddress, appSize);
+    uint32_t CRC_expected = ReadAppCRC(crcAddr);
     printf("CRC Expect: 0x%08X\r\n", CRC_expected);
     printf("CRC Result: 0x%08X\r\n", CRC_value);
     if (CRC_value == CRC_expected)

@@ -1,3 +1,12 @@
+/*
+ * @FilePath: \STM32H743_Bootloader\Drivers\ymodem\Ymodem.c
+ * @Author: MaxDYi
+ * @Date: 2024-01-16 20:24:55
+ * @LastEditors: MaxDYi
+ * @LastEditTime: 2024-01-19 11:34:41
+ * @Description:Ymodem协议实现
+ */
+
 #include "ymodem.h"
 #include "usart.h"
 #include "crc.h"
@@ -35,12 +44,13 @@ YmodemData ydata;
 uint8_t Ymodem_RxBuffer[YMODEM_BUFFER_SIZE];
 uint8_t Ymodem_TxBuffer[YMODEM_BUFFER_SIZE];
 
-void Ymodem_Init(void)
-{
-    memset(Ymodem_RxBuffer, 0, sizeof(Ymodem_RxBuffer));
-    memset(Ymodem_TxBuffer, 0, sizeof(Ymodem_TxBuffer));
-}
-
+/**
+ * @description:发送数据
+ * @param {uint8_t} *TxBuffer
+ * @param {uint16_t} Length
+ * @param {uint32_t} Timeout
+ * @return {数据发送状态}
+ */
 uint8_t Ymodem_Send(uint8_t *TxBuffer, uint16_t Length, uint32_t Timeout)
 {
     if (HAL_UART_Transmit(&huart1, TxBuffer, Length, Timeout) == HAL_OK)
@@ -53,6 +63,13 @@ uint8_t Ymodem_Send(uint8_t *TxBuffer, uint16_t Length, uint32_t Timeout)
     }
 }
 
+/**
+ * @description:接收数据
+ * @param {uint8_t} *RxBuffer
+ * @param {uint16_t} Length
+ * @param {uint32_t} Timeout
+ * @return {数据接收状态}
+ */
 uint8_t Ymodem_Receive(uint8_t *RxBuffer, uint16_t Length, uint32_t Timeout)
 {
     if (HAL_UART_Receive(&huart1, RxBuffer, Length, Timeout) == HAL_OK)
@@ -65,33 +82,56 @@ uint8_t Ymodem_Receive(uint8_t *RxBuffer, uint16_t Length, uint32_t Timeout)
     }
 }
 
+/**
+ * @description:获取文件保存地址
+ * @return {文件保存地址}
+ */
 uint32_t Ymodem_GetFileSaveAddress(void)
 {
     uint32_t Address = 0x08100000;
     return Address;
 }
 
+/**
+ * @description: 擦除Flash
+ * @param {uint32_t} StartAddress
+ * @return {*}
+ */
 void Ymodem_FlashErase(uint32_t StartAddress)
 {
     EraseCpuFlash(StartAddress);
 }
 
+/**
+ * @description: 文件写入Flash
+ * @param {uint32_t} Address
+ * @param {uint8_t} *Data
+ * @param {uint32_t} Length
+ * @return {*}
+ */
 void Ymodem_FlashWrite(uint32_t Address, uint8_t *Data, uint32_t Length)
 {
     WriteCpuFlash(Address, Data, Length);
 }
 
+/**
+ * @description: Ymodem接收文件
+ * @param {uint8_t} state
+ * @return {*}
+ */
 uint8_t Ymodem_ReceiveFile(uint8_t state)
 {
 
     static uint32_t PackNum = 0;
     static uint32_t ReceiveFileSize = 0;
     static uint32_t FlashWriteAddress = 0;
+    static uint8_t errCount = 0;
     Ymodem_State = state;
     switch (Ymodem_State)
     {
     case (YMODEM_STATE_IDLE): // 空闲
     {
+        errCount = 0;
         Ymodem_State = YMODEM_STATE_WAIT_START;
         memset(Ymodem_RxBuffer, 0, sizeof(Ymodem_RxBuffer));
         memset(Ymodem_TxBuffer, 0, sizeof(Ymodem_TxBuffer));
@@ -99,7 +139,7 @@ uint8_t Ymodem_ReceiveFile(uint8_t state)
     }
     case (YMODEM_STATE_WAIT_START): // 发送开始字符
     {
-
+        errCount = 0;
         memset(Ymodem_RxBuffer, 0, sizeof(Ymodem_RxBuffer));
         memset(Ymodem_TxBuffer, 0, sizeof(Ymodem_TxBuffer));
         PackNum = 0;
@@ -133,7 +173,12 @@ uint8_t Ymodem_ReceiveFile(uint8_t state)
             }
             else
             {
-                Ymodem_State = YMODEM_STATE_ERROR;
+                errCount++;
+                if (errCount >= 5)
+                {
+                    Ymodem_State = YMODEM_STATE_ERROR;
+                }
+                Ymodem_SendNAK();
             }
         }
         break;
@@ -163,8 +208,12 @@ uint8_t Ymodem_ReceiveFile(uint8_t state)
             {
                 memset(Ymodem_RxBuffer, 0, sizeof(Ymodem_RxBuffer));
                 memset(Ymodem_TxBuffer, 0, sizeof(Ymodem_TxBuffer));
+                errCount++;
+                if (errCount >= 5)
+                {
+                    Ymodem_State = YMODEM_STATE_ERROR;
+                }
                 Ymodem_SendNAK();
-                // Ymodem_State = YMODEM_STATE_ERROR;
             }
         }
         break;
@@ -220,22 +269,39 @@ uint8_t Ymodem_ReceiveFile(uint8_t state)
     {
         memset(Ymodem_RxBuffer, 0, sizeof(Ymodem_RxBuffer));
         memset(Ymodem_TxBuffer, 0, sizeof(Ymodem_TxBuffer));
+        errCount = 0;
         PackNum = 0;
         ReceiveFileSize = 0;
         Ymodem_State = YMODEM_STATE_IDLE;
+        Ymodem_SendCAN();
+        Ymodem_SendCAN();
+        Ymodem_SendCAN();
+        Ymodem_SendCAN();
+        Ymodem_SendCAN();
         break;
     }
     default:
     {
+        errCount = 0;
         PackNum = 0;
         ReceiveFileSize = 0;
         Ymodem_State = YMODEM_STATE_ERROR;
+        Ymodem_SendCAN();
+        Ymodem_SendCAN();
+        Ymodem_SendCAN();
+        Ymodem_SendCAN();
+        Ymodem_SendCAN();
         break;
     }
     }
     return Ymodem_State;
 }
 
+/**
+ * @description: 解析起始帧
+ * @param {uint8_t} *RxBuffer
+ * @return {起始帧信息}
+ */
 YmodemInfo Ymodem_ParseInfo(uint8_t *RxBuffer)
 {
     YmodemInfo Y_Info;
@@ -314,6 +380,11 @@ YmodemInfo Ymodem_ParseInfo(uint8_t *RxBuffer)
     }
 }
 
+/**
+ * @description: 解析数据帧
+ * @param {uint8_t} *RxBuffer
+ * @return {数据帧信息}
+ */
 YmodemData Ymodem_ParseData(uint8_t *RxBuffer)
 {
     YmodemData Y_Data;
@@ -368,6 +439,12 @@ YmodemData Ymodem_ParseData(uint8_t *RxBuffer)
     }
 }
 
+/**
+ * @description: CRC16计算
+ * @param {uint8_t} *data
+ * @param {uint32_t} size
+ * @return {CRC16计算结果}
+ */
 uint16_t Ymodem_CalCRC16(uint8_t *data, uint32_t size)
 {
     uint32_t crc = 0;
@@ -382,6 +459,12 @@ uint16_t Ymodem_CalCRC16(uint8_t *data, uint32_t size)
     return crc & 0xffffu;
 }
 
+/**
+ * @description: 更新CRC16
+ * @param {uint16_t} crcIn
+ * @param {uint8_t} byte
+ * @return {CRC16计算结果}
+ */
 uint16_t Ymodem_UpdateCRC16(uint16_t crcIn, uint8_t byte)
 {
     uint32_t crc = crcIn;
@@ -400,6 +483,10 @@ uint16_t Ymodem_UpdateCRC16(uint16_t crcIn, uint8_t byte)
     return crc & 0xffffu;
 }
 
+/**
+ * @description: 发送ACK
+ * @return {*}
+ */
 void Ymodem_SendACK(void)
 {
     memset(Ymodem_TxBuffer, 0, sizeof(Ymodem_TxBuffer));
@@ -407,6 +494,10 @@ void Ymodem_SendACK(void)
     Ymodem_Send(Ymodem_TxBuffer, 1, YMODEM_TX_TIMEOUT);
 }
 
+/**
+ * @description: 发送NAK
+ * @return {*}
+ */
 void Ymodem_SendNAK(void)
 {
     memset(Ymodem_TxBuffer, 0, sizeof(Ymodem_TxBuffer));
@@ -414,6 +505,10 @@ void Ymodem_SendNAK(void)
     Ymodem_Send(Ymodem_TxBuffer, 1, YMODEM_TX_TIMEOUT);
 }
 
+/**
+ * @description: 发送CAN
+ * @return {*}
+ */
 void Ymodem_SendCAN(void)
 {
     memset(Ymodem_TxBuffer, 0, sizeof(Ymodem_TxBuffer));
@@ -421,6 +516,10 @@ void Ymodem_SendCAN(void)
     Ymodem_Send(Ymodem_TxBuffer, 1, YMODEM_TX_TIMEOUT);
 }
 
+/**
+ * @description: 发送C
+ * @return {*}
+ */
 void Ymodem_SendC(void)
 {
     memset(Ymodem_TxBuffer, 0, sizeof(Ymodem_TxBuffer));

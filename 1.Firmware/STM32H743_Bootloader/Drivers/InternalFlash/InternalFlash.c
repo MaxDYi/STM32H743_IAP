@@ -1,26 +1,17 @@
 /*
-*********************************************************************************************************
-*
-*	模块名称 : cpu内部falsh操作模块(for STM32H743 H750)
-*	文件名称 : bsp_cpu_flash.c
-*	版    本 : V1.1
-*	说    明 : 提供读写CPU内部Flash的函数
-*	修改记录 :
-*		版本号  日期        作者     说明
-*		V1.0    2019-09-20  armfly  正式发布
-*		V1.1    2019-10-03  armfly  写flash函数，修正长度不是32字节整数倍的bug，末尾补0写入。
-*									解决HAL库函数的 HAL_FLASH_Program（）的bug，
-*									问题现象是大批量连续编程失败（报编程指令顺序错， PGSERR1、 PGSERR2）
-*	Copyright (C), 2019-2030, 安富莱电子 www.armfly.com
-*
-*********************************************************************************************************
-*/
+ * @FilePath: \STM32H743_Bootloader\Drivers\InternalFlash\InternalFlash.c
+ * @Author: MaxDYi
+ * @Date: 2024-01-16 16:32:02
+ * @LastEditors: MaxDYi
+ * @LastEditTime: 2024-01-19 11:11:02
+ * @Description:  内部FLash读、写、擦除操作库
+ */
 
 #include "InternalFlash.h"
 
 /*
 *********************************************************************************************************
-*	函 数 名: bsp_GetSector
+*	函 数 名: GetSector
 *	功能说明: 根据地址计算扇区首地址
 *	形    参: 无
 *	返 回 值: 扇区号（0-7)
@@ -80,7 +71,7 @@ uint32_t GetSector(uint32_t Address)
 
 /*
 *********************************************************************************************************
-*	函 数 名: bsp_ReadCpuFlash
+*	函 数 名: ReadCpuFlash
 *	功能说明: 读取CPU Flash的内容
 *	形    参:  _ucpDst : 目标缓冲区
 *			 _ulFlashAddr : 起始地址
@@ -113,7 +104,7 @@ uint8_t ReadCpuFlash(uint32_t _ulFlashAddr, uint8_t *_ucpDst, uint32_t _ulSize)
 
 /*
 *********************************************************************************************************
-*	函 数 名: bsp_CmpCpuFlash
+*	函 数 名: CmpCpuFlash
 *	功能说明: 比较Flash指定地址的数据.
 *	形    参: _ulFlashAddr : Flash地址
 *			 _ucpBuf : 数据缓冲区
@@ -176,7 +167,7 @@ uint8_t CmpCpuFlash(uint32_t _ulFlashAddr, uint8_t *_ucpBuf, uint32_t _ulSize)
 
 /*
 *********************************************************************************************************
-*	函 数 名: bsp_EraseCpuFlash
+*	函 数 名: EraseCpuFlash
 *	功能说明: 擦除CPU FLASH一个扇区 （128KB)
 *	形    参: _ulFlashAddr : Flash地址
 *	返 回 值: 0 成功， 1 失败
@@ -230,7 +221,7 @@ uint8_t EraseCpuFlash(uint32_t _ulFlashAddr)
 
 /*
 *********************************************************************************************************
-*	函 数 名: bsp_WriteCpuFlash
+*	函 数 名: WriteCpuFlash
 *	功能说明: 写数据到CPU 内部Flash。 必须按32字节整数倍写。不支持跨扇区。扇区大小128KB. \
 *			  写之前需要擦除扇区. 长度不是32字节整数倍时，最后几个字节末尾补0写入.
 *	形    参: _ulFlashAddr : Flash地址
@@ -320,5 +311,3 @@ err:
 
     return 1;
 }
-
-/***************************** 安富莱电子 www.armfly.com (END OF FILE) *********************************/

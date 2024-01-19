@@ -16,6 +16,13 @@
 #include "string.h"
 #include "ymodem.h"
 
+#define APP_START_ADDRESS 0x08100000
+#define APP_MAX_SIZE 0x00100000
+#define APP_CRC_ADDRESS ((uint32_t)(APP_START_ADDRESS + APP_MAX_SIZE - 4))
+
+#define CRC_SUCCESS 1
+#define CRC_ERROR 0
+
 void BootRun(void);
 
 uint8_t GetBank(void);
@@ -24,10 +31,10 @@ void SwapBank(uint8_t bankNum);
 
 uint32_t EraseBank(uint8_t bank);
 
-uint8_t CheckAppCRC(void);
+uint32_t GetAppCRC(uint32_t startAddress, uint32_t size);
 
-uint32_t ReadAppCRC(void);
+uint32_t ReadAppCRC(uint32_t crcAddr);
 
-uint8_t CheckAppCRC(void);
+uint8_t CheckAppCRC(uint32_t startAddress, uint32_t appSize, uint32_t crcAddr);
 
 #endif // __BOOTLOADER_H__

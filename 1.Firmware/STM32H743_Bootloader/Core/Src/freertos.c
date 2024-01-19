@@ -40,7 +40,7 @@
 
 #define B 1
 #define R 0
-#define LED B
+#define LED R
 /* USER CODE END PTD */
 
 /* Private define ------------------------------------------------------------*/
@@ -146,9 +146,6 @@ void TaskDefault(void const *argument)
     /* Infinite loop */
     for (;;)
     {
-        // Ymodem_Receive(rxBuffer, 8, 0XFFFF);
-        //  HAL_UART_Receive(&huart1, rxBuffer, 8, 0XFFFF);
-        HAL_GPIO_TogglePin(LED_GREEN_GPIO_Port, LED_GREEN_Pin);
         if (LED == B)
         {
             HAL_GPIO_TogglePin(LED_BLUE_GPIO_Port, LED_BLUE_Pin);
@@ -162,7 +159,6 @@ void TaskDefault(void const *argument)
     /* USER CODE END TaskDefault */
 }
 
-/* USER CODE BEGIN Header_TaskIAP */
 /**
  * @brief Function implementing the taskIAP thread.
  * @param argument: Not used
@@ -187,15 +183,23 @@ void TaskIAP(void const *argument)
                 if (YmodemState == YMODEM_STATE_RECEIVE_FINISH)
                 {
 
-                    FLASH_OBProgramInitTypeDef OBInit;
-                    HAL_FLASHEx_OBGetConfig(&OBInit);
-                    OBInit.Banks = FLASH_BANK_1;
-                    HAL_FLASHEx_OBGetConfig(&OBInit);
-                    SwapBank(2);
-                    // break;
+                    // FLASH_OBProgramInitTypeDef OBInit;
+                    // HAL_FLASHEx_OBGetConfig(&OBInit);
+                    // OBInit.Banks = FLASH_BANK_1;
+                    // HAL_FLASHEx_OBGetConfig(&OBInit);
+                    if (CheckAppCRC(APP_START_ADDRESS, APP_MAX_SIZE, APP_CRC_ADDRESS) == CRC_SUCCESS)
+                    {
+                        SwapBank(2);
+                    }
+                    else
+                    {
+                        // TODO:½ÓÊÕ´íÎó
+                    }
+                    break;
                 }
                 else if (YmodemState == YMODEM_STATE_ERROR)
                 {
+                    // TODO:Éý¼¶Ê§°Ü
                     break;
                 }
             }

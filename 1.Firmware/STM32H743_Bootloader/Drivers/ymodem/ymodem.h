@@ -3,7 +3,7 @@
  * @Author: MaxDYi
  * @Date: 2024-01-16 20:24:55
  * @LastEditors: MaxDYi
- * @LastEditTime: 2024-01-18 10:58:43
+ * @LastEditTime: 2024-01-19 11:16:43
  * @Description:
  */
 #ifndef __YMODEM_H__
@@ -46,7 +46,6 @@ typedef struct Ymodem_Data
     uint8_t Error;
 } YmodemData;
 
-void Ymodem_Init(void);
 
 uint8_t Ymodem_Send(uint8_t *TxBuffer, uint16_t Length, uint32_t Timeout);
 

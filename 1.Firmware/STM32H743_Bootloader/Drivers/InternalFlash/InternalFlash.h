@@ -1,14 +1,11 @@
 /*
-*********************************************************************************************************
-*
-*	模块名称 : cpu内部falsh操作模块
-*	文件名称 : bsp_cpu_flash.h
-*	版    本 : V1.0
-*
-*	Copyright (C), 2013-2014, 安富莱电子 www.armfly.com
-*
-*********************************************************************************************************
-*/
+ * @FilePath: \STM32H743_Bootloader\Drivers\InternalFlash\InternalFlash.h
+ * @Author: MaxDYi
+ * @Date: 2024-01-16 16:32:07
+ * @LastEditors: MaxDYi
+ * @LastEditTime: 2024-01-19 11:11:37
+ * @Description:  内部FLash读、写、擦除操作库
+ */
 
 #ifndef _INTERNALFLASH_H_
 #define _INTERNALFLASH_H_
@@ -54,5 +51,3 @@ uint8_t CmpCpuFlash(uint32_t _ulFlashAddr, uint8_t *_ucpBuf, uint32_t _ulSize);
 uint8_t EraseCpuFlash(uint32_t _ulFlashAddr);
 
 #endif
-
-/***************************** 安富莱电子 www.armfly.com (END OF FILE) *********************************/
