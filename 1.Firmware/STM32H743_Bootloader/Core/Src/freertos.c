@@ -179,7 +179,6 @@ void TaskIAP(void const *argument)
             uint8_t YmodemState = Ymodem_ReceiveFile(YMODEM_STATE_IDLE);
             while (1)
             {
-                YmodemState = Ymodem_ReceiveFile(YmodemState);
                 if (YmodemState == YMODEM_STATE_RECEIVE_FINISH)
                 {
                     if (CheckAppCRC(APP_START_ADDRESS, APP_MAX_SIZE, APP_CRC_ADDRESS) == CRC_SUCCESS)
@@ -197,6 +196,7 @@ void TaskIAP(void const *argument)
                     // TODO:Éý¼¶Ê§°Ü
                     break;
                 }
+                YmodemState = Ymodem_ReceiveFile(YmodemState);
             }
         }
         osDelay(10);

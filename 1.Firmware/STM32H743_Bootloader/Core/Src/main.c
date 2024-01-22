@@ -58,7 +58,6 @@ void MX_FREERTOS_Init(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-uint8_t rxBuffer[132];
 /* USER CODE END 0 */
 
 /**

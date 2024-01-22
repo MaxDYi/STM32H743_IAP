@@ -35,7 +35,7 @@ void BootRun(void)
         uint32_t sourceAddress = 0x08000000;
         for (uint8_t i = 0; i < 8; i++)
         {
-            EraseCpuFlash(targetAddress + i * 0x02000);
+            EraseCpuFlash(targetAddress + i * 0x20000);
         }
         uint8_t flashData[1024];
         for (uint16_t i = 0; i < 1024; i++)
